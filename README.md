@@ -1,4 +1,4 @@
-# wd-coursework
+# WD-Coursework
 Web Design and development cousework repo
 
 ### Tasks:- 
