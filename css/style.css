@@ -1,0 +1,20 @@
+:root{
+    --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
+    --theme-white: #fff; /* best for text */
+    --theme-black: #000;
+    --theme-primary:#00f0f0; /* accent color */
+    --theme-secondary:#0e8888;
+    --theme-tertiary:#2e4f4f;
+    --theme-radius: 0.5rem;
+    --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
+}
+
+body{
+    background-color: var(--theme-bg);
+    color: var(--theme-white);
+    font-family: 'Roboto','Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif';
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
