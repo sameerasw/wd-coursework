@@ -1,0 +1,142 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #121212;
+  --main-font: 2.2rem;
+  --p-font: 1.1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;      /*to remove underline from anchor tag contents*/
+  list-style: none;           /*to remove bullets from ul items*/
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header{
+  width: 100%;                /*to expand it to whole web page(horizontaly)*/
+  top: 0;                     /*to start from upper margin*/
+  right: 0;                   /*make header content expand till right corner*/
+  z-index: 1000;
+  position: fixed;            /*to make header contents visible even while scrolling*/
+  background:var(--bg-color);
+  box-shadow: 0px 2px 18px 0px rgb(129, 162, 182);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 8%;
+  transition: 0.3s;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: var(--main-font);
+  font-weight: 600;
+  line-height: 0.8;
+}
+
+#menu-icon {
+  font-size: 38px;
+  color: var(--text-color);
+  z-index: 10001;
+  display: none;
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar a{
+  font-size: var(--p-font);
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: all 0.40s ease;
+}
+
+.navbar a:hover {
+  background: var(--text-color);
+  color: #fff;
+}
+
+.icons {
+  display: inline-block;
+}
+
+.icons i {
+  color: var(--text-color);
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+section{
+  padding: 10px 8%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10rem;           /*get down items covering from navbar*/
+}
+
+.box{
+  padding: 0px 20px 10px 20px;
+  background: transparent;
+  box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);     /*align items next to others horizontaly*/
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.35s ease;
+}
+
+.box img{
+  width: 100%;
+  height: auto;
+}
+
+.box h4{
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.box h5 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.box .cart{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: 1px solid purple;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
