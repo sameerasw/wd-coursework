@@ -2,9 +2,6 @@
     --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
     --theme-white: #fff; /* best for text */
     --theme-black: #000;
-    --theme-primary:#00f0f0; /* accent color */
-    --theme-secondary:#0e8888;
-    --theme-tertiary:#2e4f4f;
     --theme-radius: 0.5rem;
     --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
 }
@@ -19,12 +16,12 @@ body{
     padding: 0;
 }
 
-ul {
+#navbar {
     list-style-type: none;
-    padding: 0;
+    padding: 5px 0px;
     margin: 0;
     overflow: hidden;
-    background-color: var(--theme-bg);
+    background-color: var(--theme-black);
     backdrop-filter: blur(var(--theme-blur));
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -42,6 +39,7 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
     transition: all 0.3s ease-in-out;
     margin: 0px 5px 0px 5px;
     border-radius: 10px;
@@ -58,10 +56,14 @@ ul {
   }
 
   #navbar img{
+    position: relative;
     width: 40px;
     height: 40px;
-    margin: 0px 20px;
-    filter: invert(100%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    margin: 3px 20px;
+    /* border: var(--theme-primary) 3px solid; */
+    border-radius: 50%;
+    background-color: var(--theme-primary);
+    transition: all 0.3s ease-in-out;
   }
 
   li select{
@@ -76,6 +78,7 @@ ul {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
 
   .dot {
@@ -113,3 +116,4 @@ ul {
     -webkit-transition: all 0.2s ease-in-out !important;
     transition: all 0.2s ease-in-out !important;
   }
+
