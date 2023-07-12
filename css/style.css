@@ -1,0 +1,133 @@
+:root{
+    --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
+    --theme-white: #fff; /* best for text */
+    --theme-black: #000;
+    --theme-radius: 0.5rem;
+    --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
+}
+
+body{
+    background-color: var(--theme-bg);
+    color: var(--theme-white);
+    font-family: 'Roboto','Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif';
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    list-style-type: none;
+    padding: 5px 0px;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #00000055;
+    backdrop-filter: blur(var(--theme-blur));
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: var(--theme-white);
+    opacity: 0.5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+  }
+  
+  li a:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .active {
+    opacity: 1;
+    background-color: var(--theme-tertiary);
+  }
+
+  #navbar img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 3px 20px;
+    /* border: var(--theme-primary) 3px solid; */
+    border-radius: 50%;
+    background-color: var(--theme-primary);
+    transition: all 0.3s ease-in-out;
+  }
+
+  li select{
+    width: 100px;
+    height: 30px;
+    margin: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: var(--theme-primary) 3px solid;
+    background-color: var(--theme-bg);
+    color: var(--theme-white);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .dot {
+    width: 40px;
+    height: 4px;
+    background: var(--theme-primary);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #navbar li:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(100px) !important;
+    transform: translateX(100px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  #navbar li:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px) !important;
+    transform: translateX(200px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  #navbar li:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(295px) !important;
+    transform: translateX(295px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  #navbar li:nth-child(5):hover ~ .dot {
+    -webkit-transform: translateX(372px) !important;
+    transform: translateX(372px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  #navbar li:nth-child(6):hover ~ .dot {
+    -webkit-transform: translateX(455px) !important;
+    transform: translateX(455px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+    
+  #navbar li:nth-child(7):hover ~ .dot {
+    -webkit-transform: translateX(545px) !important;
+    transform: translateX(545px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
