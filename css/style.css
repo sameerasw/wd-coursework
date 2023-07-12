@@ -21,10 +21,11 @@ body{
     padding: 5px 0px;
     margin: 0;
     overflow: hidden;
-    background-color: var(--theme-black);
+    width: 100%;
+    background-color: #00000055;
     backdrop-filter: blur(var(--theme-blur));
     position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
     top: 0;
   }
   
@@ -97,23 +98,36 @@ body{
   }
   
   #navbar li:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(182px) !important;
-    transform: translateX(182px) !important;
+    -webkit-transform: translateX(200px) !important;
+    transform: translateX(200px) !important;
     -webkit-transition: all 0.2s ease-in-out !important;
     transition: all 0.2s ease-in-out !important;
   }
   
   #navbar li:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(270px) !important;
-    transform: translateX(270px) !important;
+    -webkit-transform: translateX(295px) !important;
+    transform: translateX(295px) !important;
     -webkit-transition: all 0.2s ease-in-out !important;
     transition: all 0.2s ease-in-out !important;
   }
   
   #navbar li:nth-child(5):hover ~ .dot {
-    -webkit-transform: translateX(358px) !important;
-    transform: translateX(358px) !important;
+    -webkit-transform: translateX(372px) !important;
+    transform: translateX(372px) !important;
     -webkit-transition: all 0.2s ease-in-out !important;
     transition: all 0.2s ease-in-out !important;
   }
-
+  
+  #navbar li:nth-child(6):hover ~ .dot {
+    -webkit-transform: translateX(455px) !important;
+    transform: translateX(455px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+    
+  #navbar li:nth-child(7):hover ~ .dot {
+    -webkit-transform: translateX(545px) !important;
+    transform: translateX(545px) !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+  }
