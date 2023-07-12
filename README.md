@@ -9,12 +9,14 @@ Web Design and development cousework repo
 ### Tasks:- 
 - [x] Formed Group with 4 Members
 - [x] Filled out Doc with member info
-- [x] Specify the member role  (@TODO)
+- [x] Specify the member role
+- [ ] Report Progression
 
 ### CW Progress:-
 
-| Task | Progress      |
+| Role | Member        |
 |-----:|---------------|
-|     1|               |
-|     2|               |
-|     3|               |
+|     1|     Udith     |
+|     2|     Sameera   |
+|     3|     Charin    |
+|     4|     Chathura  |
