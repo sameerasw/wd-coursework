@@ -48,15 +48,11 @@ ul {
   }
   
   li a:hover {
-    /* background-color: var(--theme-secondary);
-    transform: scale(0.9); */
     opacity: 1;
     transition: all 0.3s ease-in-out;
   }
   
   .active {
-    /* color:var(--theme-black);
-    background-color: var(--theme-primary); */
     opacity: 1;
   }
 
@@ -73,8 +69,9 @@ ul {
     margin: 10px 20px;
     text-align: center;
     border-radius: 10px;
-    background-color: var(--theme-primary);
-    color: var(--theme-black);
+    border: var(--theme-primary) 3px solid;
+    background-color: var(--theme-bg);
+    color: var(--theme-white);
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -86,8 +83,8 @@ ul {
     background: var(--theme-primary);
     border-radius: 50%;
     opacity: 0;
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
+    -webkit-transform: translateX(118px);
+    transform: translateX(118px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
