@@ -25,5 +25,4 @@ change_theme = (theme) => {
     }
 }
 
-
 change_theme(theme); //change theme on page load
