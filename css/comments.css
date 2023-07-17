@@ -1,5 +1,5 @@
 .container{
-    width: 30%;
+    width: 34%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,6 @@ textarea, #name{
     border: var(--theme-secondary) 3px solid;
     background-color: var(--theme-black);
     color: var(--theme-white);
-    padding: 20px;
     margin: 10px 0px;
     resize: none;
     transition: all 0.3s ease-in-out;
