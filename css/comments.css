@@ -1,13 +1,32 @@
-.container{
-    width: 34%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem auto;
-    font-size: 1.2rem;
-    line-height: 1.75;
-    transition: all 0.3s ease-in-out;
+#background{
+    /* https://10015.io/tools/css-background-pattern-generator */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+    top:0;
+    background-color: var(--theme-black);
+    opacity: 1;
+    background-image:  radial-gradient(var(--theme-secondary) 1.25px, transparent 1.25px), radial-gradient(var(--theme-primary) 1.25px, var(--theme-bg) 1.25px);
+    background-size: 50px 50px;
+    background-position: 0 0,25px 25px;
+    transition: all 5s ease-in-out;
+}
+
+body{
+  cursor:none
+}
+
+.rounded{
+    /* https://codepen.io/developeraspire5/pen/gOGjeZG */
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .form__container{
@@ -18,8 +37,23 @@
     align-items: center;
 }
 
+.form__bg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    background-color: var(--theme-bg-trans);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    cursor: default;
+}
+
 textarea, #name{
     width: 100%;
+    min-height: 10px;
     border-radius: 20px;
     border: var(--theme-secondary) 3px solid;
     background-color: var(--theme-black);
@@ -27,6 +61,11 @@ textarea, #name{
     margin: 10px 0px;
     resize: none;
     transition: all 0.3s ease-in-out;
+}
+
+textarea, #name{
+    padding:5%;
+    width: 90%;
 }
 
 textarea:focus, #name:focus, .container select:focus{
