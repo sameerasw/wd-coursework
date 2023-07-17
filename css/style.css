@@ -31,19 +31,27 @@ body{
   
   li {
     float: left;
+    transition: all 0.3s ease-in-out;
   }
   
   li a {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 110px;
     color: var(--theme-white);
     opacity: 0.5;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 5px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     margin: 0px 5px 0px 5px;
     border-radius: 10px;
+  }
+
+  li a span{
+    margin: auto 5px;
   }
   
   li a:hover {
@@ -91,37 +99,58 @@ body{
   }
   
   #navbar li:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(100px) !important;
-    transform: translateX(100px) !important;
+    -webkit-transform: translateX(125px) !important;
+    transform: translateX(125px) !important;
   }
   
   #navbar li:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(200px) !important;
-    transform: translateX(200px) !important;
+    -webkit-transform: translateX(255px) !important;
+    transform: translateX(255px) !important;
   }
   
   #navbar li:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(295px) !important;
-    transform: translateX(295px) !important;
+    -webkit-transform: translateX(385px) !important;
+    transform: translateX(385px) !important;
   }
   
   #navbar li:nth-child(5):hover ~ .dot {
-    -webkit-transform: translateX(372px) !important;
-    transform: translateX(372px) !important;
+    -webkit-transform: translateX(515px) !important;
+    transform: translateX(515px) !important;
   }
   
   #navbar li:nth-child(6):hover ~ .dot {
-    -webkit-transform: translateX(455px) !important;
-    transform: translateX(455px) !important;
+    -webkit-transform: translateX(645px) !important;
+    transform: translateX(645px) !important;
   }
     
   #navbar li:nth-child(7):hover ~ .dot {
-    -webkit-transform: translateX(555px) !important;
-    transform: translateX(555px) !important;
+    -webkit-transform: translateX(775px) !important;
+    transform: translateX(775px) !important;
   }
 
-  h1{
-    margin-top: 5%;
+  .nav__text{
+    transition: all 0.3s ease-in-out;
   }
 
-  
+  .container{
+    margin-top: 7vh;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .nav__text, .dot{
+      display: none;
+    }
+    li a {
+      width:fit-content;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+    li{
+      justify-content: space-between;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    #theme-selector{
+      width:20px;
+    }
+}
