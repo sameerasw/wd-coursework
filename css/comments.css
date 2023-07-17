@@ -1,16 +1,122 @@
 .container{
-    width: 100%;
+    width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    transition: all 0.3s ease-in-out;
+}
+
+.form__container{
+    margin: 5% 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-form{
-    justify-content: center;
+textarea, #name{
+    width: 100%;
+    border-radius: 20px;
+    border: var(--theme-secondary) 3px solid;
+    background-color: var(--theme-black);
+    color: var(--theme-white);
+    padding: 20px;
+    margin: 10px 0px;
+    resize: none;
+    transition: all 0.3s ease-in-out;
 }
 
-#rating__container{
-    justify-content: center;
+textarea:focus, #name:focus, .container select:focus{
+    outline: none;
+    border: var(--theme-primary) 3px solid;
+}
+
+textarea::placeholder, #name::placeholder{
+    color: var(--theme-secondary);
+}
+
+textarea:hover, #name:hover, .container select:hover{
+    border: var(--theme-primary) 3px solid;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 80%;
+    }
+}
+
+input[type=radio]{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin: 1rem 1rem;
+    width: 100%;
+}
+
+.radio__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio__box label{
+    margin: 0.5rem 0;
+}
+
+.radio__box input[type=radio]:checked ~ label{
+    color: var(--theme-primary);
+    font-weight: bold;
+}
+
+.container select{
+    width: 100%;
+    border-radius: 20px;
+    border: var(--theme-secondary) 3px solid;
+    background-color: var(--theme-black);
+    color: var(--theme-white);
+    padding: 20px;
+    margin: 10px 0px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1em;
+}
+
+input[type=submit], input[type=reset]{
+    border-radius: 20px;
+    width: 150px;
+    padding: 20px;
+    margin: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    background-color: var(--theme-primary);
+}
+
+input[type=submit]:hover{
+    background-color: var(--theme-secondary);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=reset]{
+    background-color: var(--theme-black);
+    border: var(--theme-secondary) 3px solid;
+    color: var(--theme-white);
+}
+
+input[type=reset]:hover{
+    border: var(--theme-primary) 3px solid;
+    transition: all 0.3s ease-in-out;
 }
