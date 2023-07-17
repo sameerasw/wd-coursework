@@ -93,41 +93,35 @@ body{
   #navbar li:nth-child(2):hover ~ .dot {
     -webkit-transform: translateX(100px) !important;
     transform: translateX(100px) !important;
-    -webkit-transition: all 0.2s ease-in-out !important;
-    transition: all 0.2s ease-in-out !important;
   }
   
   #navbar li:nth-child(3):hover ~ .dot {
     -webkit-transform: translateX(200px) !important;
     transform: translateX(200px) !important;
-    -webkit-transition: all 0.2s ease-in-out !important;
-    transition: all 0.2s ease-in-out !important;
   }
   
   #navbar li:nth-child(4):hover ~ .dot {
     -webkit-transform: translateX(295px) !important;
     transform: translateX(295px) !important;
-    -webkit-transition: all 0.2s ease-in-out !important;
-    transition: all 0.2s ease-in-out !important;
   }
   
   #navbar li:nth-child(5):hover ~ .dot {
     -webkit-transform: translateX(372px) !important;
     transform: translateX(372px) !important;
-    -webkit-transition: all 0.2s ease-in-out !important;
-    transition: all 0.2s ease-in-out !important;
   }
   
   #navbar li:nth-child(6):hover ~ .dot {
     -webkit-transform: translateX(455px) !important;
     transform: translateX(455px) !important;
-    -webkit-transition: all 0.2s ease-in-out !important;
-    transition: all 0.2s ease-in-out !important;
   }
     
   #navbar li:nth-child(7):hover ~ .dot {
-    -webkit-transform: translateX(545px) !important;
-    transform: translateX(545px) !important;
-    -webkit-transition: all 0.2s ease-in-out !important;
-    transition: all 0.2s ease-in-out !important;
+    -webkit-transform: translateX(555px) !important;
+    transform: translateX(555px) !important;
   }
+
+  h1{
+    margin-top: 5%;
+  }
+
+  
