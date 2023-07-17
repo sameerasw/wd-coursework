@@ -23,6 +23,7 @@ change_theme = (theme) => {
     } else if (theme == "butter") {
         document.getElementById("theme").setAttribute("href", "css/theme-butter.css");
     }
+    theme_selector.value = theme;
 }
 
 change_theme(theme); //change theme on page load
