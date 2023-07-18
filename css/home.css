@@ -94,11 +94,10 @@ h2{
     transition: all 0.3s ease-in-out;
 }
 
-.game__banner{
+.banner{
     width: 100% ;
     height: 20vh !important;
     border-radius: 20px;
-    background-image: url(../resources/img/home/quiz.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,6 +105,32 @@ h2{
     margin: 3% 0 0 0;
     transition: all 0.3s ease-in-out;
     z-index: 1;
+}
+
+#game__banner{
+    background-image: url(../resources/img/home/quiz.jpg);
+}
+
+#movie__gallery{
+    background-image: url(../resources/img/home/gallery.jpg);
+}
+
+#shop{
+    background-image: url(../resources/img/home/shop.jpg);
+}
+
+#rate{
+    background-image: url(../resources/img/home/review.jpg);
+}
+
+#sitemap{
+  width: auto;
+  padding: 0% 0% 0% 0%;
+}
+
+#sitemap a{
+  text-decoration: none;
+  color: var(--theme-white);
 }
 
 @media only screen and (max-width: 1500px) {
@@ -124,6 +149,9 @@ h2{
       filter: none;
       transition: all 0.3s ease-in-out;
     }
+    h2{
+      margin-top: 30%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -134,5 +162,9 @@ h2{
     .wrapper:hover .article{
       filter: none;
       transition: all 0.3s ease-in-out;
+    }
+    
+    h2{
+      margin-top: 70%;
     }
 }
