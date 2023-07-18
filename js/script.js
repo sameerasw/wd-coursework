@@ -34,4 +34,6 @@ change_theme = (theme) => {
     theme_selector.value = theme;
 }
 
-change_theme(theme); //change theme on page load
+window.addEventListener('DOMContentLoaded', (event) => {
+    change_theme(theme); //change theme on page load
+});
