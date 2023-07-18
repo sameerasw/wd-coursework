@@ -139,6 +139,10 @@ body{
     transition: all 0.3s ease-in-out;
   }
 
+  .material-symbols-rounded{
+    transition: all 0.3s ease-in-out;
+  }
+
   .container{
     width: 34%;
     height: 100%;
@@ -149,6 +153,12 @@ body{
     font-size: 1.2rem;
     line-height: 1.75;
     transition: all 0.3s ease-in-out;
+}
+
+.animate{
+  opacity: 0;
+  scale: 0.3;
+  transition: all 0.3s ease-in-out;
 }
 
   @media only screen and (max-width: 1150px) {
