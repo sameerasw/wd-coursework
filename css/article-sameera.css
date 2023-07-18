@@ -1,0 +1,10 @@
+.container img{
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.container{
+}
