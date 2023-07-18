@@ -1,0 +1,15 @@
+body{
+    cursor:none
+  }
+  
+  .rounded{
+      /* https://codepen.io/developeraspire5/pen/gOGjeZG */
+      position: fixed;
+      top: -15px;
+      left: -15px;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      z-index: 1;
+  }

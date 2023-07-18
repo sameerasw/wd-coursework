@@ -1,11 +1,3 @@
-// document.onmousemove = function(e) { 
-//     var x = e.clientX; 
-//     var y = e.clientY; 
-//     document.getElementById('background').style.marginLeft  = x+"px";
-//     document.getElementById('background').style.marginTop  = y+"px";
-    
-// }
-
 const cursorRounded = document.querySelector('.move');
 
 
