@@ -21,7 +21,7 @@ theme_selector.addEventListener("change", function () {
 });
 
 change_theme = (theme) => {
-    if (url.includes("article", 0) || url.includes("sameerasw", 0)) {
+    if (url.includes("article", 0) || url.includes("info", 0)) {
         prefix = "../";
     } else {
         prefix = "";
