@@ -3,7 +3,9 @@ let theme = localStorage.getItem("theme");
 //get current webpage url
 let url = window.location.href;
 let prefix = ""; //prefix for theme change
-
+//load items in the page slowly div by div
+let items = document.getElementsByClassName("animate");
+let i = 0;
 
 // Path: js\script.js
 theme_selector.addEventListener("change", function () {
@@ -36,4 +38,15 @@ change_theme = (theme) => {
 
 window.addEventListener('DOMContentLoaded', (event) => {
     change_theme(theme); //change theme on page load
+    let interval = setInterval(function () {
+        items[i].style.opacity = "1";
+        items[i].style.scale = "1";
+        i++;
+        if (i >= items.length) {
+            clearInterval(interval);
+        }
+    }
+    , 200);
+    
 });
+
