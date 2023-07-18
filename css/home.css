@@ -18,11 +18,14 @@
     justify-content: end;
     transition: all 0.3s ease-in-out;
     z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .article span{
     background-color: var(--theme-bg);
-    padding: 2% 5%;
+    padding: 10px 20px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
   }
@@ -32,7 +35,7 @@
     transition: all 0.3s ease-in-out;
   }
 
-  .article:hover{
+  .article:hover, .game__banner:hover{
     scale: 1.1;
     filter: blur(0px) !important;
     box-shadow: 0 0 50px var(--theme-black);
@@ -40,18 +43,22 @@
     transition: all 0.3s ease-in-out;
   }
 
-  .article:hover span{
+.article:hover span{
     background-color: var(--theme-primary);
     color: var(--theme-black);
-    padding: 2% 5%;
     transition: all 0.3s ease-in-out;
   }
 
-  #article1{
+#article1{
     background-image: url(../resources/img/home/theater.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+#article2{
+    background-image: url(../resources/img/home/movie-list.jpg);
+}
+
+#article3{
+    background-image: url(../resources/img/home/why-movies.jpg);
 }
 
 .container{
@@ -60,10 +67,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem auto;
+    margin: 4rem auto;
     font-size: 1.2rem;
     line-height: 1.75;
     transition: all 0.3s ease-in-out;
+}
+
+.game__banner{
+    width: 100% ;
+    height: 20vh !important;
+    border-radius: 20px;
+    background-image: url(../resources/img/home/quiz.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0% 0% 2% 0%;
+    margin: 5% 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 1500px) {
