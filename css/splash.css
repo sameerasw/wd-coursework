@@ -74,3 +74,7 @@ h1{
     height: 25px;
     margin: 0px 10px;
 }
+
+#background{
+    background-image:  radial-gradient(var(--theme-white) 1.25px, transparent 1.25px), radial-gradient(var(--theme-white) 1.25px, var(--theme-bg) 1.25px);
+}
