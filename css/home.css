@@ -78,11 +78,19 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
     }
+    .wrapper:hover .article{
+      filter: none;
+      transition: all 0.3s ease-in-out;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .wrapper {
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25%;
+    }
+    .wrapper:hover .article{
+      filter: none;
+      transition: all 0.3s ease-in-out;
     }
 }
