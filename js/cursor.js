@@ -1,3 +1,4 @@
+
 const background = document.getElementById("background");
 
 const moveCursor = (e)=> {
