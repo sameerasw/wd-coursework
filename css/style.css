@@ -70,7 +70,7 @@ body{
     position: relative;
     width: 40px;
     height: 40px;
-    margin: 3px 20px;
+    margin: 5px 20px 0 20px;
     /* border: var(--theme-primary) 3px solid; */
     border-radius: 50%;
     background-color: var(--theme-primary);
