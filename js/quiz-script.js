@@ -8,4 +8,4 @@ startButton.onclick = () => {
 
 exitButton.onclick = () => {
     popupGuide.classList.remove("active");
-};
+}
