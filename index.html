@@ -6,40 +6,34 @@
 		<title>Welcome</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+		<link rel="stylesheet" href="css/no-cursor.css">
+		<link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/splash.css">
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/svg" href="resources/favicon.svg"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 	</head>
 	<body>
-		<nav>
-		<ul id="navbar">
-			<li style="float: left"><img src="./resources/logo.svg" alt=""></li>
-			<li><a href="#index" class="active">Home</a></li>
-			<li><a href="news.asp">Comments</a></li>
-			<li><a href="contact.asp">Shop</a></li>
-			<li><a href="about.asp">Quiz</a></li>
-			<li><a href="about.asp">Sitemap</a></li>
-			<li><a href="about.asp">About Us</a></li>
-			<li style="float: right">
-				<select name="Theme" id="theme-selector">
-					<option value="cyan">Cyan</option>
-					<option value="crimson">Crimson</option>
-					<option value="butter">Butter</option>
-				</select>
-			</li>
-			<div class="dot" style="
-			transform: translateX(100px);
-			-webkit-transform: translateX(100px);
-			-webkit-transition: all 0.2s ease-in-out;
-			transition: all 0.2s ease-in-out;
-			"></div> <!-- Change the translateX values according to the page you are adapting the navbar. -->
-		  </ul>
-		</nav>
-		<div>
-			<h1>Hello world!</h1>			
+        <div id="background"></div>
+        <div class="cursor rounded move" id="cursor"></div>
+		<div class="container">
+            <div id="logo">
+                <img src="./resources/logo-white.svg" alt="logo">
+                <h1 id="title">MOVIE TIME</h1>
+            </div>
+
+            <span id="details"><b>A collaborative page built by </b><br><br>
+                <a href="https://github.com/UKhira"><img src="resources/img/devs/sameera.png" alt="" class="dev-img">Udith Kavishka</a><br>
+                <a href="https://sameerasw.me/"><img src="resources/img/devs/sameera.png" alt="" class="dev-img">Sameera Sandakelum</a><br>
+                <a href="https://github.com/charin1702"><img src="resources/img/devs/sameera.png" alt="" class="dev-img">Charin Randitha</a><br>
+                <a href="https://github.com/DMCPMadhusankha"><img src="resources/img/devs/sameera.png" alt="" class="dev-img">Chathura Prabhath</a>
+            </span>
 		</div>
-		<script src="js/script.js"></script>
+		<!-- <script src="js/script.js"></script> -->
+        <script src="js/cursor.js"></script>
+		<script src="js/splash.js"></script>
 	</body>
 </html>

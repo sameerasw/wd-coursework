@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/no-cursor.css">
+		<link rel="stylesheet" href="css/background.css">
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/svg" href="resources/favicon.svg"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+	</head>
+	<body>
+		<nav>
+		<ul id="navbar">
+			<a href="index.html"><li style="float: left"><img src="./resources/logo.svg" alt=""></li></a>
+			<li><a href="#home" class="active"><span class="material-symbols-rounded">home</span><span class="nav__text">Home</span></a></li>
+			<li><a href="gallery.html"><span class="material-symbols-rounded">movie</span><span class="nav__text">Gallery</span></a></li>
+			<li><a href="shop.html"><span class="material-symbols-rounded">shop</span><span class="nav__text">Shop</span></a></li>
+			<li><a href="quiz.html"><span class="material-symbols-rounded">quiz</span><span class="nav__text">Quiz</span></a></li>
+			<li><a href="sitemap.html"><span class="material-symbols-rounded">lan</span><span class="nav__text">Sitemap</span></a></li>
+			<li><a href="comments.html"><span class="material-symbols-rounded">chat</span><span class="nav__text">Comments</span></a></li>
+			<li><a href="about.html"><span class="material-symbols-rounded">info</span><span class="nav__text">About Us</span></a></li>
+			<li style="float: right" class="animate">
+				<select name="Theme" id="theme-selector">
+					<option value="cyan">Cyan</option>
+					<option value="crimson">Crimson</option>
+					<option value="butter">Butter</option>
+				</select>
+			</li>
+			<div class="dot animate" style="
+			transform: translateX(125px);
+			-webkit-transform: translateX(125px);
+			-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			"></div> <!-- Change the translateX values according to the page you are adapting the navbar. -->
+		  </ul>
+		</nav>
+        <div id="background"></div>
+		<div class="container">
+            <div class="cursor rounded move" id="cursor"></div>
+			<h1>Top Articles</h1>
+			<div class="wrapper">
+				<div class="article animate" id="article1"><span>What is IMAX?</span></div>
+				<div class="article animate" id="article2"><span>Top movies list</span></div>
+				<div class="article animate" id="article3"><span>Why you should watch movies?</span></div>
+				<div class="article animate" id="article4"><span>Movie review websites</span></div>
+			</div>
+			<h2>More Links</h2>
+			<div class="wrapper wrapper__links">
+				<div class="banner article animate" id="game__banner"><span>Let's play a game!</span></div>
+				<div class="banner article animate" id="movie__gallery"><span>Movie Gallery</span></div>
+				<div class="banner article animate" id="shop"><span>Visit the Shop</span></div>
+				<div class="banner article animate" id="rate"><span>Rate the Website</span></div>
+			</div>
+			<h2>Sitemap</h2>
+			<div class="wrapper article animate" id="sitemap">
+				<a href="./sitemap.html"><span>Checkout the whole website</span></a>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer__container">
+				<div class="animate" id="dev">
+					<a href="./subpages/sameerasw-info.html"><img src="./resources/img/devs/sameera.png" alt=""><span>Sameera Sandakelum (Contributor)</span></a>
+				</div>
+				<div class="footer__container__left">
+					<h3>Movie Time</h3>
+					<p>Movie Time is a collaborative website built by a group of students from Informatics Institute of Technology.</p>
+				</div>
+				<div class="footer__container__right">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="quiz.html">Quiz</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+						<li><a href="comments.html">Comments</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+        <script src="js/cursor.js"></script>
+		<script src="js/home.js"></script>
+	</body>
+</html>
