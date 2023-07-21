@@ -6,7 +6,9 @@
 		<title>Sameera Sandakelum</title>
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/theme-cyan.css" id="theme">
-		<link rel="stylesheet" href="../css/article-sameera.css">
+		<link rel="stylesheet" href="../css/about-me.css">
+		<link rel="stylesheet" href="../css/no-cursor.css">
+		<link rel="stylesheet" href="../css/background.css">
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,10 +42,56 @@
 				"></div> <!-- Change the translateX values according to the page you are adapting the navbar. -->
 			  </ul>
 			</nav>
+			<div id="background"></div>
 		<div class="container">
             <div class="cursor rounded move" id="cursor"></div>
-            <h1>Sameera Sandakelum</h1>
+            <h1 class="animate">Sameera Sandakelum</h1>
+			<h3 class="animate">Student 2</h3>
+			<img src="../resources/img/devs/sameera-lg.jpeg" alt="" id="dev-image" class="animate">
+			<div class="contribute">
+				<h2 class="animate">My contributions:</h2>
+				<ul>
+					<li class="animate">
+						<a href="../home.html" id="homepage">Homepage</a> - I designed and develped the homepage of the website where the splash screen leads to. The navbar was also a part of it and I implemented a cursor parallax effect to make the website more interactive. Homepage includes links to the 4 individual pages of related articles and some other shortcuts in the website too.
+					</li>
+					<li class="animate"><a href="#">Navbar</a> - As a part of the home page, I designed the initial navbar of the website and let others implement it. It includes a hover effect with a line animation and an active class to show what page is active too. Also it contains a theme switcher drop down menu to switch the color theme of the entire website instantly that will be saved even after the session ends.</li>
+					<li class="animate"><a href="">Cursor</a> - I designed the cursor of the website and implemented it with a parallax effect to make the website more interactive. It is a custom cursor that is not visible on the splash screen. It is only visible on the other pages of the website.</li>
+					<li class="animate">
+						<a href="../comments.html">Comments</a> - The comments forum which takes user feedback was also implemented by me and it sends that data to our team google group's email address throut the formsubmit.co service to get the feedback to all the members of the team and so the user does not need to provide personal emails to us.
+					</li>
+					<li class="animate">
+						<a href="article-what-is-imax.html">What is IMAX</a> - I wrote the article about IMAX and its history and also designed the page as the related article page.
+					</li>
+					<li class="animate">
+						<a href="https://github.com/sameerasw/wd-coursework/blob/efeaf3c119ad3dfd9f6b157f146836d332faf849/css/style.css">style.css</a> - I designed the style.css file of the website and also the theme-cyan.css file which is the default theme of the website which will be loaded by a java script code in the index.html file from local storage of the browser is saved.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer__container">
+				<div class="animate" id="dev">
+					<a href="sameerasw-info.html"><img src="../resources/img/devs/sameera.png" alt=""><span>Sameera Sandakelum (Contributor)</span></a>
+				</div>
+				<div class="footer__container__left">
+					<h3>Movie Time</h3>
+					<p>Movie Time is a collaborative website built by a group of students from Informatics Institute of Technology.</p>
+				</div>
+				<div class="footer__container__right">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="quiz.html">Quiz</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+						<li><a href="comments.html">Comments</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<script src="../js/script.js"></script>
+        <script src="../js/cursor.js"></script>
 	</body>
 </html>
