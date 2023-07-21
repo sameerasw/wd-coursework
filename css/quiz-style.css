@@ -6,19 +6,13 @@
     --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--theme-bg);
-    z-index: -100;
-}
-
 .background {
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position: relative;
     z-index: 0;
-    background: url('../resources/img/quiz/bgf2.png') no-repeat;
+    overflow: hidden;
+    background: url('../resources/img/quiz/quiz-background.png') no-repeat;
     background-size: cover;
 }
 
@@ -45,7 +39,7 @@ body {
 }
 
 .quiz-home p {
-    color: var(--theme-white);
+    color: #fff;
     font-size: 17px;
     text-align: center;
     margin-bottom: 20px;
@@ -148,4 +142,267 @@ body {
     background-color: var(--theme-tertiary);
     color: var(--theme-primary);
     border: 2px solid var(--theme-primary);
+}
+
+.quiz-section {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.quiz-section.active {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-bg);
+}
+
+.quiz-box {
+    border: 3px solid var(--theme-primary);
+    background-color: var(--theme-bg);
+    width: 600px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+.quiz-box.active {
+    opacity: 1;  /*//////////////////////////////////////////////////// */
+    pointer-events: auto;
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+}
+
+.quiz-box h2 {
+    font-size: 18px;
+    margin: 0;
+    color: var(--theme-white);
+    border-bottom: var(--theme-primary) 1px solid;
+    padding: 12px 30px;
+}
+
+.quiz-header {
+    display: flex;
+    font-size: 17px;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.question-no {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.count {
+    font-size: 16px;
+    font-weight: 400;
+    color: #acacac;
+}
+
+.timer-sec {
+    color: var(--theme-bg);
+    background-color: var(--theme-primary);
+    padding: 2px 4px;
+    border-radius: var(--theme-radius);
+}
+
+.quiz-box .question {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    color: var(--theme-white);
+    padding: 8px 30px 2px 30px;
+}
+
+.quiz-box .option-list {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    color: #acacac;
+    padding: 10px 30px;
+}
+
+.quiz-box .option {
+    margin: 10px 0;
+    padding: 8px 20px;
+    border: 2px solid #acacac;
+    cursor: pointer;
+}
+
+.quiz-box .option:hover {
+    background-color: #252525;
+}
+
+.quiz-end {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.next-btn {
+    background-color: var(--theme-secondary);
+    color: var(--theme-white);
+    margin: 5px 30px 20px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    width: 170px;
+    height: 40px;
+    border: 1px solid var(--theme-secondary);
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    border: 2px solid var(--theme-secondary);
+    background-color: transparent;
+    color: var(--theme-secondary);
+    box-shadow: 0 0 12px 0 var(--theme-secondary);
+}
+
+.option.correct {
+    border: 2px solid rgba(45, 197, 45, 0.886);
+    color: rgba(45, 197, 45, 0.886);
+    font-weight: 500;
+}
+
+.option.incorrect {
+    border: 2px solid rgba(255, 0, 0, 0.799);
+    color: rgba(255, 0, 0, 0.799);
+    font-weight: 500;
+}
+
+.option.disabled {
+    pointer-events: none;
+}
+
+.result-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 350px;
+    height: 350px;
+    border : 3px solid var(--theme-primary);
+    background-color: var(--theme-bg);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.result-page.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.result-page h2 {
+    font-size: 30px;
+    color: var(--theme-primary);
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+div.result-page span {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.restart-btn {
+    background-color: var(--theme-primary);
+    color: var(--theme-bg);
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--theme-primary);
+    border-radius: var(--theme-radius);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.restart-btn:hover {
+    background-color: var(--theme-bg);
+    color: var(--theme-primary);
+    font-size: 17px;
+    width: 105px;
+    height: 30px;
+    border: 2px solid var(--theme-primary);
+}
+
+.quit-btn {
+    background-color: var(--theme-primary);
+    color: var(--theme-bg);
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--theme-primary);
+    border-radius: var(--theme-radius);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.quit-btn:hover {
+    background-color: var(--theme-bg);
+    color: var(--theme-primary);
+    font-size: 17px;
+    width: 105px;
+    height: 30px;
+    border: 2px solid var(--theme-primary);
+}
+
+.progress-text.excellent {
+    color: green;
+}
+  
+.progress-text.good {
+    color: yellow;
+}
+  
+.progress-text.average {
+    color: orange;
+}
+  
+.progress-text.fail {
+    color: red;
 }
