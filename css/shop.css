@@ -1,8 +1,12 @@
   /* my */
-  
-  .bxs-shopping-bag{
-    margin-left: 28rem;
+  h1 {
+    margin-left: 36rem;
+    font-size: 40px;
   }
+
+  /* .bxs-shopping-bag{
+    margin-left: 28rem;
+  } */
   
   .bx-cart:hover{
     transform: translate(4px,4px);
@@ -26,7 +30,7 @@
   }
   
   /* overwritten values which suits to mine */
-  .container{
+  section .container{
     display: flex !important;
     width: 100% !important;
     margin-top: 2rem !important;
@@ -34,27 +38,26 @@
     align-items: start !important;
   }
   
-  #root {
+  section .container #root {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
     align-items: center;
     grid-template-columns: repeat(3, 2fr);
     gap: 3rem;
     text-align: center;
-    cursor: pointer;         /*get down items covering from navbar */
+    cursor: pointer;         
   }
   
-  .sidebar{
-    width: 70%;
+  section .container .sidebar{
+    max-width: 30%;
     height: auto;
     border-radius: 5px;
     margin-left: 20px;
     border: 2px solid var(--theme-tertiary);
     text-align: center;
-    /* float: right; */
   }
   
-  .head {
+  section .container .sidebar .head {
     background: var(--theme-secondary);
     border-radius: 4px;
     height: 50px;
@@ -65,8 +68,15 @@
     align-items: center;
     padding: 0px 80px;
   }
+
+  section .container .sidebar .head p {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 800;
+    font-style: italic;
+  }
   
-  .foot {
+  section .container .sidebar .foot {
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
@@ -74,7 +84,7 @@
     border-top: 1px solid wheat;
   }
   
-  .box{
+  section .container #root .box{
     padding: 0px 20px 10px 20px;
     background: transparent;
     box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);     /*align items next to others horizontaly*/
@@ -83,24 +93,24 @@
     transition: all 0.35s ease;
   }
   
-  .box img{
+  section .container #root .box img{
     width: 100%;
     height: auto;
   }
   
-  .box h4{
+  section .container #root .box h4{
     font-size: 15px;
     letter-spacing: 1px;
     margin-bottom: 8px;
   }
   
-  .box h5 {
+  section .container #root .box h5 {
     font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
   
-  .box .cart{
+  section .container #root .box .cart{
     position: absolute;
     top: 0;
     left: 0;
@@ -115,12 +125,12 @@
     border: 1px solid var(--theme-black);
   }
   
-  .box:hover {
+  section .container #root .box:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
   }
   
-  .cart-item{
+  section .container .sidebar #cartItem .cart-item{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,7 +141,7 @@
     margin: 10px 10px;
   }
   
-  .row-img{
+  section .container .sidebar #cartItem .cart-item .row-img{
     width: 50px;
     height: 50px;
     border-radius: 60px;
@@ -141,18 +151,18 @@
     justify-content: center;
   }
   
-  .rowimg{
+  section .container .sidebar #cartItem .cart-item .row-img .rowimg{
     width: 40px;
     height: 50px;
     border-radius: 50%;
   }
   
-  .bx-trash:hover{
+  section .container .sidebar #cartItem .cart-item .bx-trash:hover{
     cursor: pointer;
     transform: scale(1.5);
   }
 
-  .chkout-btn{
+  section .container .sidebar .chkout-btn{
     background-color: var(--theme-primary);
     color: var(--theme-white);
     width: 100%;
@@ -164,7 +174,7 @@
     text-transform: uppercase;
   }
 
-  .chkout-btn:hover{
+  section .container .sidebar .chkout-btn:hover{
     transform: scale(1.1);
     transition: all 0.4s ease-in-out;
   }

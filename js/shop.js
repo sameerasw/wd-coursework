@@ -89,7 +89,7 @@ function displaycart(cartIcon){
     let j = 0; total = 0;
 
     document.getElementById("count").innerHTML = cart.length;
-    document.getElementById("total").innerHTML = "$ " + 0 +".00";
+    document.getElementById("total").innerHTML = "LKR: " + 0 +".00";
 
     if(cart.length == 0){
         document.getElementById('cartItem').innerHTML = "Your Cart is empty";
@@ -120,11 +120,11 @@ function checkout(){
     //split the string to get the price
     totalPrice;
 
-    if(totalPrice == "$ 0.00"){
+    if(totalPrice == "LKR: 0.00"){
         alert("At least buy one")
     }
     else {
-        // go to google;
+        // go to checkout page;
         window.open("../subpages/check_out.html", "_blank");
         //clear cart
         cart = [];
