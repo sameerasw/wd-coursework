@@ -4,8 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Shop</title>
-		<!-- <link rel="stylesheet" href="css/style.css" /> -->
+		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/no-cursor.css"> -->
+		<link rel="stylesheet" href="css/background.css">
 
 		<link rel="stylesheet" href="css/shop.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -50,6 +52,8 @@
 		<a id="cart"><i class="bx bxs-shopping-bag"></i><p id="count">0</p></a>
 
 		<div class="container">
+			<!-- <div class="cursor rounded move" id="cursor"></div> -->
+
 			<section class="shop" id="shop">
 				<div class="container">
 				  <div id="root"></div>
@@ -60,13 +64,14 @@
 						  <h3>Total</h3>
 						  <div id="total">LKR: 0.00</div>
 					  </div>
-					  <input type="submit" value="Proceed to Checkout" onclick="checkout()">
+					  <input type="submit" value="Proceed to Checkout" onclick="checkout()" class="chkout-btn">
 				  </div>
 			  </div>
 				</div>
 			  </section>	
 		</div>
-		<!-- <script src="js/script.js"></script> -->
 		<script src="js/shop.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/cursor.js"></script>
 	</body>
 </html>
