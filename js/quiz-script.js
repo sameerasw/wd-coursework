@@ -52,7 +52,6 @@ restartButton.onclick = () => {
     score = 0;
     timeLeft = 60;
     getQuestions(questionCount);
-    updateTimer();
 };
 
 quitButton.onclick = () => {
