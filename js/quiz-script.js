@@ -38,6 +38,7 @@ continueButton.onclick = () => {
     quizBox.classList.add("active");
 
     getQuestions(0);
+    clearTimeout(timer);
     timeLeft = 60;
     updateTimer();
 };
@@ -50,8 +51,10 @@ restartButton.onclick = () => {
 
     questionCount = 0;
     score = 0;
+    clearTimeout(timer);
     timeLeft = 60;
     getQuestions(questionCount);
+    updateTimer();
 };
 
 quitButton.onclick = () => {
@@ -63,6 +66,7 @@ quitButton.onclick = () => {
 
     questionCount = 0;
     score = 0;
+    clearTimeout(timer);
     timeLeft = 60;
     getQuestions(questionCount);
 };
