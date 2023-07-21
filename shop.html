@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+		<link rel="stylesheet" href="css/shop.css">
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +40,26 @@
 			"></div> <!-- Change the translateX values according to the page you are adapting the navbar. -->
 		  </ul>
 		</nav>
+		<a id="cart"><i class="bx bxs-shopping-bag"></i><p id="count">0</p></a>
+
 		<div class="container">
-			<h1>Hello world!</h1>			
+			<section class="shop" id="shop">
+				<div class="container">
+				  <div id="root"></div>
+				  <div class="sidebar">
+					  <div class="head"><p>My Cart</p></div>
+					  <div id="cartItem">Your Cart is empty</div>
+					  <div class="foot">
+						  <h3>Total</h3>
+						  <div id="total">LKR: 0.00</div>
+					  </div>
+					  <input type="submit" value="Proceed to Checkout" onclick="checkout()">
+				  </div>
+			  </div>
+				</div>
+			  </section>	
 		</div>
-		<script src="js/script.js"></script>
+		<!-- <script src="js/script.js"></script> -->
+		<script src="js/shop.js"></script>
 	</body>
 </html>
