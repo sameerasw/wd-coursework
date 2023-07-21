@@ -46,6 +46,7 @@
     background: rgba(255, 255, 255, 0.05);
     margin: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--theme-primary);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -78,7 +79,6 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid rgba(25, 25, 25, 0.25);
     margin-bottom: 5px;   
 }   
 
