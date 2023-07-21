@@ -1,7 +1,7 @@
 let article_card = document.getElementsByClassName("wrapper")[0];
 let links_card = document.getElementsByClassName("wrapper")[1];
 let sitemap = document.getElementsByClassName("wrapper")[2];
-let cursor = document.getElementById("cursor");
+let cursor1 = document.getElementById("cursor");
 let article1 = document.getElementById("article1");
 let article2 = document.getElementById("article2");
 let article3 = document.getElementById("article3");
@@ -15,11 +15,11 @@ let rate = document.getElementById("rate");
 
 function mouseover(element, cursor) {
     element.addEventListener("mouseover", function () {
-        cursor.classList.add("cursor-hover");
+        cursor1.classList.add("cursor-hover");
     }
     );
     element.addEventListener("mouseout", function () {
-        cursor.classList.remove("cursor-hover");
+        cursor1.classList.remove("cursor-hover");
     }
     );
 }

@@ -1,5 +1,6 @@
 
 const background = document.getElementById("background");
+const cursor = document.getElementById("cursor");
 
 const moveCursor = (e)=> {
   const mouseY = e.clientY;
