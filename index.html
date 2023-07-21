@@ -1,45 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+    <head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<!-- <link rel="stylesheet" href="./style.css" /> -->
+        <link rel="stylesheet" href="./index.css"/>
+		<link rel="stylesheet" href="./css/gallery.css" />
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+        
+        <!-- <link rel="stylesheet" href="css.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/svg" href="resources/favicon.svg"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 	</head>
 	<body>
 		<nav>
 		<ul id="navbar">
-			<li style="float: left"><img src="./resources/logo.svg" alt=""></li>
-			<li><a href="#index" class="active">Home</a></li>
-			<li><a href="news.asp">Comments</a></li>
-			<li><a href="contact.asp">Shop</a></li>
-			<li><a href="about.asp">Quiz</a></li>
-			<li><a href="about.asp">Sitemap</a></li>
-			<li><a href="about.asp">About Us</a></li>
+			<a href="index.html"><li style="float: left"><img src="./resources/logo.svg" alt=""></li></a>
+			<li><a href="home.html"><span class="material-symbols-rounded">home</span><span class="nav__text">Home</span></a></li>
+			<li><a href="#gallery" class="active"><span class="material-symbols-rounded">movie</span><span class="nav__text">Gallery</span></a></li>
+			<li><a href="shop.html"><span class="material-symbols-rounded">shop</span><span class="nav__text">Shop</span></a></li>
+			<li><a href="quiz.html"><span class="material-symbols-rounded">quiz</span><span class="nav__text">Quiz</span></a></li>
+			<li><a href="sitemap.html"><span class="material-symbols-rounded">lan</span><span class="nav__text">Sitemap</span></a></li>
+			<li><a href="comments.html"><span class="material-symbols-rounded">chat</span><span class="nav__text">Comments</span></a></li>
+			<li><a href="about.html"><span class="material-symbols-rounded">info</span><span class="nav__text">About Us</span></a></li>
 			<li style="float: right">
 				<select name="Theme" id="theme-selector">
 					<option value="cyan">Cyan</option>
 					<option value="crimson">Crimson</option>
 					<option value="butter">Butter</option>
 				</select>
+				<select name="Theme" id="theme-selector">
+					<option id="small">A</option>
+					<option id="medium">A</option>
+					<option id="large">A</option>
+				</select>
 			</li>
 			<div class="dot" style="
-			transform: translateX(100px);
-			-webkit-transform: translateX(100px);
+			transform: translateX(255px);
+			-webkit-transform: translateX(255px);
 			-webkit-transition: all 0.2s ease-in-out;
 			transition: all 0.2s ease-in-out;
-			"></div> <!-- Change the translateX values according to the page you are adapting the navbar. -->
-		  </ul>
-		</nav>
-		<div>
-			<h1>Hello world!</h1>			
-		</div>
-		<script src="js/script.js"></script>
-	</body>
+			"></div> 
+		 </ul>
+		 </nav>
+    <div id="slidy-container">
+        <figure id="slidy">
+            <img src="./img/avatar.png" alt="">
+            <!-- https://www.google.com/search?q=avatar++1920*1080&tbm=isch&ved=2ahUKEwjj2IqPs5yAAxV95TgGHYY6A6kQ2-cCegQIABAA&oq=avatar++1920*1080&gs_lcp=CgNpbWcQAzIGCAAQCBAeOgQIIxAnOggIABAIEAcQHlCQC1jUGmDiHmgAcAB4AIABvgGIAbcIkgEDMC43mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=drG4ZOPFL_3K4-EPhvWMyAo&bih=664&biw=1519&rlz=1C1VDKB_enLK1066LK1066&hl=en#imgrc=-EatQrGOun5f9M -->
+            <img src="./img/transformers.png" alt="">
+            <!-- https://www.google.com/search?q=transformers+rise+of+the+beasts+1920*1080&tbm=isch&hl=en&chips=q:transformers+rise+of+the+beasts+1920+*+1080,online_chips:1920x1080&rlz=1C1VDKB_enLK1066LK1066&sa=X&ved=2ahUKEwjWne2-tZyAAxWjzqACHQoGDaQQ4lYoBXoECAEQNw&biw=1519&bih=664#imgrc=aS05N9pw4N5rtM -->
+            <img src="./img/rrr.png" alt="">
+            <!-- https://www.google.com/search?q=rrr+1920*1080&tbm=isch&ved=2ahUKEwisgYTgtZyAAxVyrmMGHTtrAqoQ2-cCegQIABAA&oq=rrr+1920*1080&gs_lcp=CgNpbWcQAzoECCMQJzoICAAQCBAHEB5QkBJY5RRg0x5oAHAAeACAAZkBiAGSBJIBAzAuNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=ObS4ZOyAGfLcjuMPu9aJ0Ao&bih=664&biw=1519&rlz=1C1VDKB_enLK1066LK1066&hl=en#imgrc=9pck4j0RPADSZM -->
+            <img src="./img/extraction.png" alt="">
+            <!-- https://www.google.com/search?q=extraction+2+1920*1080&tbm=isch&hl=en&chips=q:extraction+2+1920+*+1080,online_chips:movie+extraction:eBBjcvQdR9M%3D,online_chips:netflix:zo5v48T_C2A%3D&rlz=1C1VDKB_enLK1066LK1066&sa=X&ved=2ahUKEwiaoY_EtpyAAxVryKACHRXtCLEQ4lYoCHoECAEQPg&biw=1519&bih=664#imgrc=bKTJXF8P4poZbM -->
+            <img src="./img/spider.png" alt=""> 
+            <!-- https://www.google.com/search?q=spider+man+verse+3+1920x1080&tbm=isch&hl=en&chips=q:spider+man+verse+3+1920x1080,online_chips:into+the+spider:2u2-GmaKwp8%3D&rlz=1C1VDKB_enLK1066LK1066&sa=X&ved=2ahUKEwif0IeMt5yAAxXommMGHZlPCZYQ4lYoB3oECAEQPA&biw=1519&bih=664#imgrc=uweGtOjprIZ43M -->
+            <img src="./img/pathaan.png" alt="">
+        </figure>
+    </div>  
+
+    <section>
+        <div class="title-wrapper">
+            <h2 class="section-title">Most Popular Movies</h2>
+        </div>
+        <div class="container">
+            <div class="products-container">
+               <div class="product" data-name="p-1">
+                  <img src="img/1.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-2">
+                  <img src="img/2.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-3">
+                  <img src="img/3.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-4">
+                  <img src="img/4.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-5">
+                  <img src="img/5.jpg" alt="">
+               </div>
+            </div>
+
+             </div>
+
+
+        <div class="products-preview">
+
+            <div class="preview" data-target="p-1">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid1.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.
+                
+                Director
+                Christopher Nolan
+                Writers
+                Christopher NolanKai BirdMartin Sherwin
+                Stars
+                Cillian MurphyEmily BluntMatt Damon</p>
+            </div>
+         
+            <div class="preview" data-target="p-2">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid2.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+         
+            <div class="preview" data-target="p-3">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid3.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+         
+            <div class="preview" data-target="p-4">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid4.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+         
+            <div class="preview" data-target="p-5">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid5.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+    </section>
+
+
+    <section class="top">  
+        <div class="title-wrapper">
+            <h2 class="section-title">NEW RELEASES MOVIES</h2>
+        </div>
+        <div class="container"> 
+            <div class="products-container">
+               <div class="product" data-name="p-6">
+                  <img src="img/6.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-7">
+                  <img src="img/7.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-8">
+                  <img src="img/8.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-9">
+                  <img src="img/9.jpg" alt="">
+               </div>
+               <div class="product" data-name="p-10">
+                  <img src="img/10.jpg" alt="">
+               </div>
+         </div>   
+        </div>
+
+        <div class="products-preview">
+
+            <div class="preview" data-target="p-1">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid6.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem  1 ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+         
+            <div class="preview" data-target="p-2">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid7.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+         
+            <div class="preview" data-target="p-3">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid8.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+         
+            <div class="preview" data-target="p-4">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid9.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div>
+         
+            <div class="preview" data-target="p-5">
+               <i class="fas fa-times"></i>
+               <video src="./videos/vid10.mp4" controls width="500px" height="450px" ></video>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 7.6 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            </div> 
+  
+    <footer>
+        <div class="footer">
+            <div class="row">
+                2023 - All rights reserved || Designed By: D.M.C.P.Madhusankha
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+    <script>
+        let preveiwContainer = document.querySelector('.products-preview');
+        let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+        document.querySelectorAll('.products-container .product').forEach(product =>{
+        product.onclick = () =>{
+            preveiwContainer.style.display = 'flex';
+            let name = product.getAttribute('data-name');
+            previewBox.forEach(preview =>{
+            let target = preview.getAttribute('data-target');
+            if(name == target){
+                preview.classList.add('active');
+            }
+            });
+        };
+        });
+
+        previewBox.forEach(close =>{
+        close.querySelector('.fa-times').onclick = () =>{
+            close.classList.remove('active');
+            preveiwContainer.style.display = 'none';
+        };
+        });
+    </script>
+    <script src="index.js"></script>
 </html>
