@@ -76,6 +76,7 @@ var cart = [];
 function addtocart(cartIcon){
     cart.push({...category[cartIcon]});
     displaycart();
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function delElement(cartIcon){
@@ -116,12 +117,27 @@ function displaycart(cartIcon){
 
 function checkout(){
     const totalPrice = document.getElementById("total").innerHTML;
+    //split the string to get the price
+    totalPrice;
 
-    if(totalPrice == "LKR: 0.00"){
+    if(totalPrice == "$ 0.00"){
         alert("At least buy one")
     }
     else {
         // go to google;
         window.open("../subpages/check_out.html", "_blank");
+        //clear cart
+        cart = [];
+        localStorage.setItem("cart", JSON.stringify(cart));
+        //save the total to local storage
+        localStorage.setItem("total", JSON.stringify(totalPrice).split('"')[1]);
+        location.reload();
     }
+}
+
+let history = localStorage.getItem("cart");
+
+if(history){
+    cart = JSON.parse(history);
+    displaycart();
 }
