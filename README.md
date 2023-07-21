@@ -1,13 +1,22 @@
-Read Readme Plz
+# WD-Coursework
+Web Design and development cousework repo
 
-So simple thing I located these things as you structured all ur resources and stuffs in main 
-(if my page has a folder name "css" then place all content in that folder in your "css" folder in main. All content in page 
-(images, js and css file paths were set as it is, so no need to update places again))
+```diff
+- PLEASE ONLY PUSH TO YOUR OWN BRANCH!
+! AND SEND A PULL REQUEST WHEN MERGING.
+```
 
+### Tasks:- 
+- [x] Formed Group with 4 Members
+- [x] Filled out Doc with member info
+- [x] Specify the member role
+- [ ] Report Progression
 
-** SPECIAL NOTE -
+### CW Progress:-
 
-for now I unlinked the "css/style.css" and "js/script.js" cuz after linking them my pages doesn't seems to be functioning well....  
-so It's a TODO
-
-That's All. Good Work All !!!
+| Role | Member        |
+|-----:|---------------|
+|     1|     Udith     |
+|     2|     Sameera   |
+|     3|     Charin    |
+|     4|     Chathura  |

@@ -1,0 +1,315 @@
+:root{
+    --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
+    --theme-white: #fff; /* best for text */
+    --theme-black: #000;
+    --theme-radius: 0.5rem;
+    --theme-bg-trans: #00000055;
+    --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
+}
+
+body{
+    background-color: var(--theme-bg);
+    color: var(--theme-white);
+    font-family: 'Roboto','Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif';
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    list-style-type: none;
+    padding: 5px 0px;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--theme-bg-trans);
+    backdrop-filter: blur(var(--theme-blur));
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+  }
+  
+  li {
+    float: left;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 110px;
+    color: var(--theme-white);
+    opacity: 0.5;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+  }
+
+  li a span{
+    margin: auto 5px;
+  }
+  
+  li a:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .active {
+    opacity: 1;
+    background-color: var(--theme-tertiary);
+  }
+
+  #navbar img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 5px 20px 0 20px;
+    /* border: var(--theme-primary) 3px solid; */
+    border-radius: 50%;
+    background-color: var(--theme-primary);
+    transition: all 0.3s ease-in-out;
+  }
+
+  li select{
+    width: 100px;
+    height: 30px;
+    margin: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: var(--theme-primary) 3px solid;
+    background-color: var(--theme-bg);
+    color: var(--theme-white);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .dot {
+    width: 40px;
+    height: 4px;
+    background: var(--theme-primary);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #navbar li:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(125px) !important;
+    transform: translateX(125px) !important;
+  }
+  
+  #navbar li:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(255px) !important;
+    transform: translateX(255px) !important;
+  }
+  
+  #navbar li:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(385px) !important;
+    transform: translateX(385px) !important;
+  }
+  
+  #navbar li:nth-child(5):hover ~ .dot {
+    -webkit-transform: translateX(515px) !important;
+    transform: translateX(515px) !important;
+  }
+  
+  #navbar li:nth-child(6):hover ~ .dot {
+    -webkit-transform: translateX(645px) !important;
+    transform: translateX(645px) !important;
+  }
+    
+  #navbar li:nth-child(7):hover ~ .dot {
+    -webkit-transform: translateX(775px) !important;
+    transform: translateX(775px) !important;
+  }
+
+  #navbar li:nth-child(8):hover ~ .dot {
+    -webkit-transform: translateX(905px) !important;
+    transform: translateX(905px) !important;
+  }
+
+  .nav__text{
+    transition: all 0.3s ease-in-out;
+  }
+
+  .material-symbols-rounded{
+    transition: all 0.3s ease-in-out;
+  }
+
+  .container{ 
+    width: 34%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    transition: all 0.3s ease-in-out;
+  }
+
+.animate{
+  opacity: 0;
+  scale: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+
+#footer{
+  padding: 2% 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height:100%;
+  background-color: var(--theme-bg-trans);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  margin: 0;
+}
+
+#footer ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dev{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--theme-primary);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#dev img{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+#dev a{
+  text-decoration: none;
+  color: var(--theme-black);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#dev:hover{
+  scale: 1.1 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+  @media only screen and (max-width: 1150px) {
+    .nav__text, .dot{
+      display: none;
+    }
+    li a {
+      width:fit-content;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+    li{
+      justify-content: space-between;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    #theme-selector{
+      width:20px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+  .nav__text, .dot{
+    display: none;
+  }
+  li a {
+    width:fit-content;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  li{
+    justify-content: space-between;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  #theme-selector{
+    width:20px;
+  }
+  #navbar img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .nav__text, .dot{
+    display: none;
+  }
+  li a {
+    margin: 0 auto;
+    width: 25px;
+    padding: auto 5px;
+  }
+  li{
+    margin: 0 auto;
+    padding: 0;
+  }
+  #theme-selector{
+    width:20px;
+  }
+  #navbar img{
+    display: none;
+  }
+  .material-symbols-rounded{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .nav__text, .dot{
+    display: none;
+  }
+  li a {
+    margin: 0 auto;
+    width: 25px;
+    padding: auto 5px;
+  }
+  li{
+    margin: 0 auto;
+    padding: 0;
+  }
+  #theme-selector{
+    width:20px;
+    display: none;
+  }
+  #navbar img{
+    display: none;
+  }
+  .material-symbols-rounded{
+    padding: 0;
+    margin: 0;
+  }
+}

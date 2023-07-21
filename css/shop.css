@@ -1,166 +1,176 @@
-.bxs-shopping-bag{
-  margin-left: 28rem;
-}
+  /* my */
+  
+  .bxs-shopping-bag{
+    margin-left: 28rem;
+  }
+  
+  .bx-cart:hover{
+    transform: translate(4px,4px);
+    color: maroon;
+    transition: 0.3s ease-in-out;
+  }
+  
+  span{
+    height: auto;
+    margin-left: 28rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: px; */
+    /* background: var(--theme-secondary); */
+  }
+  
+  section{
+    padding: 10px 8%;
+  }
+  
+  /* overwritten values which suits to mine */
+  .container{
+    display: flex !important;
+    width: 100% !important;
+    margin-top: 2rem !important;
+    flex-direction: row !important;
+    align-items: start !important;
+  }
+  
+  #root {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 3rem;
+    text-align: center;
+    cursor: pointer;         /*get down items covering from navbar */
+  }
+  
+  .sidebar{
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: 2px solid var(--theme-tertiary);
+    text-align: center;
+    /* float: right; */
+  }
+  
+  .head {
+    background: var(--theme-secondary);
+    border-radius: 4px;
+    height: 50px;
+    padding: 10%;
+    margin-bottom: 20px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    padding: 0px 80px;
+  }
+  
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid wheat;
+  }
+  
+  .box{
+    padding: 0px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);     /*align items next to others horizontaly*/
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.35s ease;
+  }
+  
+  .box img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .box h4{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  
+  .box h5 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  .box .cart{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background: var(--theme-primary);
+    color: var(--theme-white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid var(--theme-black);
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--theme-tertiary);
+    border-bottom: 1x solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+  }
+  
+  .row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    border: 1px solid var(--theme-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rowimg{
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .bx-trash:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+  }
 
-.bx-cart:hover{
-  transform: translate(4px,4px);
-  color: maroon;
-  transition: 0.3s ease-in-out;
-}
+  .chkout-btn{
+    background-color: var(--theme-primary);
+    color: var(--theme-white);
+    width: 100%;
+    height: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2px solid var(--theme-black);  
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
 
-span{
-  height: auto;
-  margin-left: 28rem;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border-radius: px; */
-  /* background: var(--theme-secondary); */
-}
-
-section{
-  padding: 10px 8%;
-}
-
-/* overwritten values which suits to mine */
-.container{
-  display: flex;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-#root {
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, auto)); */
-  align-items: center;
-  grid-template-columns: repeat(3, 2fr);
-  gap: 3rem;
-  text-align: center;
-  cursor: pointer;         /*get down items covering from navbar */
-}
-
-.sidebar{
-  width: 70%;
-  height: auto;
-  border-radius: 5px;
-  margin-left: 20px;
-  border: 2px solid var(--theme-tertiary);
-  text-align: center;
-  /* float: right; */
-}
-
-.head {
-  background: var(--theme-secondary);
-  border-radius: 4px;
-  height: 50px;
-  padding: 10%;
-  margin-bottom: 20px;
-  color: wheat;
-  display: flex;
-  align-items: center;
-  padding: 0px 80px;
-}
-
-.foot {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0px;
-  padding: 10px 0px;
-  border-top: 1px solid wheat;
-}
-
-.box{
-  padding: 0px 20px 10px 20px;
-  background: transparent;
-  box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);     /*align items next to others horizontaly*/
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.35s ease;
-}
-
-.box img{
-  width: 100%;
-  height: auto;
-}
-
-.box h4{
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-}
-
-.box h5 {
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
-.box .cart{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 35px;
-  height: 35px;
-  background: var(--theme-primary);
-  color: var(--theme-white);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  border: 1px solid var(--theme-black);
-}
-
-.box:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.cart-item{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background: var(--theme-tertiary);
-  border-bottom: 1x solid #aaa;
-  border-radius: 3px;
-  margin: 10px 10px;
-}
-
-.row-img{
-  width: 50px;
-  height: 50px;
-  border-radius: 60px;
-  border: 1px solid var(--theme-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rowimg{
-  width: 40px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.bx-trash:hover{
-  cursor: pointer;
-  transform: scale(1.5);
-}
-
-.chkout-btn{
-  background-color: var(--theme-primary);
-  color: var(--theme-white);
-  width: 100%;
-  height: 50px;
-  font-size: larger;
-  font-weight: bolder;
-  border: 2px solid var(--theme-black);  
-  border-radius: 10px;
-  text-transform: uppercase;
-}
-
-.chkout-btn:hover{
-  transform: scale(1.1);
-  transition: all 0.4s ease-in-out;
-}
+  .chkout-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  
+  
+  
+  
+  
