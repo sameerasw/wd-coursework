@@ -53,7 +53,7 @@ restartButton.onclick = () => {
     timeLeft = 60;
     getQuestions(questionCount);
     updateTimer();
-}
+};
 
 quitButton.onclick = () => {
     resultPage.classList.remove("active");

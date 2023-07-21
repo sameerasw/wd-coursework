@@ -164,7 +164,10 @@
     transition: 0.4s ease-in-out;
     justify-content: center;
     align-items: center;
-    background-color: var(--theme-bg);
+    overflow: hidden;
+    background: url('../resources/img/quiz/quiz-background.png') no-repeat;
+    background-size: cover;
+    z-index: 0;
 }
 
 .quiz-box {
@@ -177,7 +180,7 @@
 }
 
 .quiz-box.active {
-    opacity: 1;  /*//////////////////////////////////////////////////// */
+    opacity: 1; 
     pointer-events: auto;
     transform: scale(1);
     transition: 0.4s ease-in-out;
