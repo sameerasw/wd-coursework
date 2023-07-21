@@ -45,7 +45,7 @@ const products = [
     {
         id : 7,
         image: "resources/img/shop/movie-8.png",
-        title: "The kingsman",
+        title: "The Kingsman",
         price: 2500,
     },
 ]
