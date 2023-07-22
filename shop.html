@@ -6,6 +6,8 @@
 		<title>Shop</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/theme-crimson.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="css/theme-butter.css" id="theme"> -->
 		<!-- <link rel="stylesheet" href="css/no-cursor.css"> -->
 		<link rel="stylesheet" href="css/background.css">
 
@@ -49,9 +51,11 @@
 			"></div> <!-- Change the translateX values according to the page you are adapting the navbar. -->
 		  </ul>
 		</nav>
-		<a id="cart"><i class="bx bxs-shopping-bag"></i><p id="count">0</p></a>
+		<!-- <span id="count">0</span> -->
 
 		<h1>Store</h1>
+		
+		
 
 		<!-- <div class="container"> -->
 			<div class="cursor rounded move" id="cursor"></div>
@@ -60,7 +64,7 @@
 				<div class="container">
 				  <div id="root"></div>
 				  <div class="sidebar">
-					  <div class="head"><p>My Cart</p></div>
+					  <div class="head"><p>My Cart</p> <i class="bx bxs-shopping-bag"></i><span id="count">0</span></div>
 					  <div id="cartItem">Your Cart is empty</div>
 					  <div class="foot">
 						  <h3>Total</h3>
@@ -70,6 +74,35 @@
 				  </div>
 			  </div>
 			</section>
+			<div class="popup" id="popup">
+				<img src="./resources/img/shop/empty-cart.png">
+				<h2>Cart is Empty</h2>
+				<p>You have to buy atleast one item to proceed.</p>
+				<button type="button" id="close">Close</button>
+			</div>
+			<div id="footer">
+				<div class="footer__container">
+					<div class="animate" id="dev">
+						<a href="./subpages/sameerasw-info.html"><img src="./resources/img/devs/sameera.png" alt="Sameera Sandakelum"><span>Udith Kavishka (Contributor)</span></a>
+					</div>
+					<div class="footer__container__left">
+						<h3>Movie Time</h3>
+						<p>Movie Time is a collaborative website built by a group of students from Informatics Institute of Technology.</p>
+					</div>
+					<div class="footer__container__right">
+						<h3>Quick Links</h3>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="quiz.html">Quiz</a></li>
+							<li><a href="sitemap.html">Sitemap</a></li>
+							<li><a href="comments.html">Comments</a></li>
+							<li><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			
 		<script src="js/shop.js"></script>
 		<script src="js/script.js"></script>

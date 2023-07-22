@@ -1,5 +1,7 @@
 .container{
+    margin-top: 7rem;
     width: 60% !important;
+    border: double;
 }
 
 .container h1{
@@ -57,3 +59,10 @@
     margin-left: 10rem;
 }
 
+dd {
+    margin-bottom: 6rem;
+}
+
+dl img {
+    margin-top: 3rem;
+}

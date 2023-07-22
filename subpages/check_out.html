@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- how to get step back from current location - https://stackoverflow.com/questions/57361403/pure-html-back-button#:~:text=When%20you%20want%20the%20back%20button%20to%20go,go%20multiple%20steps%20back%20in%20the%20URL%20tree. -->
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg" href="../resources/favicon.svg"/>
     <link rel="stylesheet" href="../css/checkout.css">
     <title>CheckOut</title>
@@ -18,32 +18,32 @@
                     <h3 class="title">Billing Address</h3>
 
                     <div class="input-box">
-                        <span>Full Name: <span>*</span></span>
+                        <label>Full Name: <span>*</span></label>
                         <input type="text" placeholder="Sam Emmanuel" required>
                     </div>
 
                     <div class="input-box">
-                        <span>Email: <span>*</span></span>
+                        <label>Email: <span>*</span></label>
                         <input type="email" placeholder="example@example.com" required>
                     </div>
 
                     <div class="input-box">
-                        <span>Address: <span>*</span></span>
+                        <label>Address: <span>*</span></label>
                         <input type="text" placeholder="Street - Town" required>
                     </div>
 
                     <div class="input-box">
-                        <span>City: <span>*</span></span>
+                        <label>City: <span>*</span></label>
                         <input type="text" placeholder="London" required>
                     </div>
 
                     <div class="input-box">
-                        <span >Country: <span>*</span></span>
+                        <label>Country: <span>*</span></label>
                         <input type="text" placeholder="Sri Lanka" required>
                     </div>
 
                     <div class="input-box">
-                        <span>Zip Code: <span>*</span></span>
+                        <label>Zip Code: <span>*</span></label>
                         <input type="number" required>
                     </div>
                 </div>
@@ -52,48 +52,50 @@
                     <h3 class="title">Card Details</h3>
 
                     <div class="input-box">
-                        <span>Card Accpted: </span>
+                        <label>Card Accpted: </label>
                         <img src="../resources/img/shop/form/cards.jpeg" alt="cards">
                     </div>
 
                     <div class="input-box">
-                        <span>Name on Card: <span>*</span></span>
+                        <label>Name on Card: <span>*</span></label>
                         <input type="text" placeholder="Sam Emmanuel" required>
                     </div>
 
                     <div class="input-box">
-                        <span>Card Number: <span>*</span></span>
+                        <label>Card Number: <span>*</span></label>
                         <input type="number" placeholder="1111-2222-3333-4444" required>
                     </div>
+
                     <div class="flex">  
                         <div class="input-box">                    
-                            <span>Expire Month: <span>*</span></span>
+                            <label>Expire Month: <span>*</span></label>
                             <input type="text" placeholder="mm" size="2" maxlength="2" required>
                         </div>
+
                         <div class="input-box">
-                            <span>Expire Year: <span>*</span></span>
+                            <label>Expire Year: <span>*</span></label>
                             <input type="text" placeholder="yy" size="2" maxlength="2" required> 
                         </div>
+                        
                     </div>
 
                     <div class="input-box">
-                        <span>Country: <span>*</span></span>
-                        <input type="text" placeholder="Sri Lanka" required>
+                        <label>CVV: <span>*</span></label>
+                        <input type="text" maxlength="3" placeholder="Last three digits on back of card" required>
                     </div>
 
-                    <div class="input-box">
-                        <span>CVV: <span>*</span></span>
-                        <input type="text" maxlength="4" placeholder="Last three digits on back of card" required>
-                    </div>
+                    <div id="total_price"></div>
+
                 </div>
+                <!-- <span id="total_price"></span> -->
                 <input type="submit" value="Proceed to checkout" class="submit-btn" onclick="displayMsg()">
-                <span id="total_price"></span>
+                
             </div>
         </form>
     </div>
 
     <div class="popup" id="popup">
-        <img src="../resources/img/shop/form/tick.png">
+        <img src="../resources/img/shop/form/tick.png" alt="Done">
         <h2>Thank You</h2>
         <p>Your Order has been placed successfully.</p>
         <button type="button" id="close">Close</button>

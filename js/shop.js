@@ -48,6 +48,24 @@ const products = [
         title: "The Kingsman",
         price: 2500,
     },
+    {
+        id : 8,
+        image: "resources/img/shop/movie-9.png",
+        title: "The Northman",
+        price: 3000,
+    },
+    {
+        id : 9,
+        image: "resources/img/shop/movie-10.png",
+        title: "Memory",
+        price: 2500,
+    },
+    {
+        id : 10,
+        image: "resources/img/shop/movie-11.png",
+        title: "Multiverse of Madness",
+        price: 1000,
+    },
 ]
 
 const category = [...new Set(products.map((item) =>
@@ -60,8 +78,8 @@ document.getElementById("root").innerHTML = category.map((item) =>
     return(
         `<div class = 'box'>
             <img src=${image} alt="Movie">
-            <h4>${title}</h4>
-            <h5>LKR: ${price}</h5>
+            <h3>${title}</h3>
+            <h4>LKR: ${price}</h4>
             <div class="cart">` +
                     "<i class='bx bx-cart' title='Buy Now' onclick='addtocart("+(i++)+")'> </i>" +
             `</div>
@@ -117,11 +135,21 @@ function displaycart(cartIcon){
 
 function checkout(){
     const totalPrice = document.getElementById("total").innerHTML;
+
+    let popup = document.getElementById("popup");
+    let close = document.getElementById("close");
+
     //split the string to get the price
     totalPrice;
 
     if(totalPrice == "LKR: 0.00"){
-        alert("At least buy one")
+        // alert("At least buy one")
+        popup.classList.add("open-popup-field");
+        close.addEventListener("click", function(){
+            popup.classList.remove("open-popup-field");
+        }
+        );
+
     }
     else {
         // go to checkout page;
