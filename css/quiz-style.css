@@ -393,19 +393,3 @@ div.result-page span {
     height: 30px;
     border: 2px solid var(--theme-primary);
 }
-
-.excellent {
-    color: green;
-}
-  
-.good {
-    color: yellow;
-}
-  
-.average {
-    color: orange;
-}
-  
-.fail {
-    color: red;
-}
