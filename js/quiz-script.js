@@ -126,17 +126,6 @@ function selectedOption(answer) {
     }
 }
 
-timerDisplay = () => {
-    countdown = setInterval(() => {
-      count--;
-      timer.innerHTML = count;
-      if (count === 0) {
-        clearInterval(countdown); // Clear the interval when the countdown reaches 0
-        showResult();
-      }
-    }, 1000); // Update the countdown every 1 second (1000 milliseconds)
-}
-
 function showResult() {
     quizBox.classList.remove("active");
     resultPage.classList.add("active");
@@ -158,17 +147,17 @@ function showResult() {
 
     if (score == 10) {
         progressText.textContent = "Excellent! You aced the quiz!";
-        progressText.classList.add("excellent");
+        progressText.style.color = "green"; 
     } else if (score >= 7 && score <= 9) {
         progressText.textContent = "Impressive! Keep up the good work!";
-        progressText.classList.add("good");
+        progressText.style.color = "yellow"; 
     } else if (score >= 4 && score <= 6) {
         progressText.textContent = "Not bad! Keep practicing to improve!";
-        progressText.classList.add("average");
+        progressText.style.color = "orange"; 
     } else {
         progressText.textContent = "Keep practicing and you'll get better!";
-        progressText.classList.add("fail");
-    }
+        progressText.style.color = "red"; 
+    }    
 }
 
 
