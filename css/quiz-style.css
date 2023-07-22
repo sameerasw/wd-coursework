@@ -393,19 +393,3 @@ div.result-page span {
     height: 30px;
     border: 2px solid var(--theme-primary);
 }
-
-.progress-text.excellent {
-    color: green;
-}
-  
-.progress-text.good {
-    color: yellow;
-}
-  
-.progress-text.average {
-    color: orange;
-}
-  
-.progress-text.fail {
-    color: red;
-}
