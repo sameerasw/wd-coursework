@@ -168,7 +168,7 @@ dl {
 }
 
 .wrapper .card:hover {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 .wrapper .card .content {
