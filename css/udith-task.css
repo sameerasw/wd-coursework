@@ -1,0 +1,24 @@
+.container{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--theme-black);
+    min-width: 60%;
+}
+.container h1{
+  color: var(--theme-primary);
+  margin-top: 5rem;
+}
+
+.container h2{
+    margin-left: 12rem;
+}
+
+.container img{
+    width: 40%;
+    height: auto;
+    border: 2px dashed var(--theme-primary);
+    border-radius: 200px
+}
+
+.container ul{
+    list-style-type: square;
+}
