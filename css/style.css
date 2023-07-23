@@ -24,7 +24,6 @@ body{
     width: 100%;
     background-color: var(--theme-bg-trans);
     backdrop-filter: blur(var(--theme-blur));
-    position: -webkit-sticky; /* Safari */
     position: fixed;
     top: 0;
     z-index: 100000;

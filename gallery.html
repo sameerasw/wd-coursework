@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<title>Welcome</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css" >
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+
+		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/svg" href="resources/favicon.svg">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" >
 	</head>
 	<body>
 		<nav>
@@ -30,6 +33,30 @@
 					<option value="crimson">Crimson</option>
 					<option value="butter">Butter</option>
 				</select>
+
+				<select name="list" onchange="bgcolor(this.value)">
+					<option value="" selected>None</option>
+					<option value="Red">Red</option>
+					<option value="Green">Green</option>
+					<option value="Blue">Blue</option>
+					<option value="Purple">Purple</option>
+					<option value="Black" >Black</option>
+					
+					<!-- Background colour change java script code-->
+				  </select>
+
+				  <select name="list" onchange="fontsize(this.value)">
+					<option value="0.8em" selected>small</option>
+					<option value="1.5em">medium</option>
+					<option value="2em">large</option>
+			
+					
+					<!-- Background colour change java script code-->
+
+				  </select>
+
+
+
 			</li>
 			<li>
 				<div class="dot" style="
@@ -38,12 +65,214 @@
 			 -webkit-transition: all 0.2s ease-in-out;
 			 transition: all 0.2s ease-in-out;
 			 "></div> <!-- Change the translateX values according to the page you are adapting the navbar. --> 
-			 </li>
-	   </ul>
+			 </li> 
+		  </ul>
 		</nav>
-		<div class="container">
-			<h1>Hello world!</h1>			
+		<div id="content">
+			<div class="container">
+				<div class="slide">
+				<div id="slidy-container">
+					<figure>
+						<img src="./resources/img/gallery/avatar.png" alt="">
+						<!-- https://www.google.com/search?q=avatar++1920*1080&tbm=isch&ved=2ahUKEwjj2IqPs5yAAxV95TgGHYY6A6kQ2-cCegQIABAA&oq=avatar++1920*1080&gs_lcp=CgNpbWcQAzIGCAAQCBAeOgQIIxAnOggIABAIEAcQHlCQC1jUGmDiHmgAcAB4AIABvgGIAbcIkgEDMC43mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=drG4ZOPFL_3K4-EPhvWMyAo&bih=664&biw=1519&rlz=1C1VDKB_enLK1066LK1066&hl=en#imgrc=-EatQrGOun5f9M -->
+						<img src="./resources/img/gallery/transformers.png" alt="">
+						<!-- https://www.google.com/search?q=transformers+rise+of+the+beasts+1920*1080&tbm=isch&hl=en&chips=q:transformers+rise+of+the+beasts+1920+*+1080,online_chips:1920x1080&rlz=1C1VDKB_enLK1066LK1066&sa=X&ved=2ahUKEwjWne2-tZyAAxWjzqACHQoGDaQQ4lYoBXoECAEQNw&biw=1519&bih=664#imgrc=aS05N9pw4N5rtM --> 
+						<img src="./resources/img/gallery/rrr.png" alt="">
+						<!-- https://www.google.com/search?q=rrr+1920*1080&tbm=isch&ved=2ahUKEwisgYTgtZyAAxVyrmMGHTtrAqoQ2-cCegQIABAA&oq=rrr+1920*1080&gs_lcp=CgNpbWcQAzoECCMQJzoICAAQCBAHEB5QkBJY5RRg0x5oAHAAeACAAZkBiAGSBJIBAzAuNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=ObS4ZOyAGfLcjuMPu9aJ0Ao&bih=664&biw=1519&rlz=1C1VDKB_enLK1066LK1066&hl=en#imgrc=9pck4j0RPADSZM --> 
+						<img src="./resources/img/gallery/extraction.png" alt="">
+						<!-- https://www.google.com/search?q=extraction+2+1920*1080&tbm=isch&hl=en&chips=q:extraction+2+1920+*+1080,online_chips:movie+extraction:eBBjcvQdR9M%3D,online_chips:netflix:zo5v48T_C2A%3D&rlz=1C1VDKB_enLK1066LK1066&sa=X&ved=2ahUKEwiaoY_EtpyAAxVryKACHRXtCLEQ4lYoCHoECAEQPg&biw=1519&bih=664#imgrc=bKTJXF8P4poZbM -->
+						<img src="./resources/img/gallery/spider.png" alt=""> 
+						<!-- https://www.google.com/search?q=spider+man+verse+3+1920x1080&tbm=isch&hl=en&chips=q:spider+man+verse+3+1920x1080,online_chips:into+the+spider:2u2-GmaKwp8%3D&rlz=1C1VDKB_enLK1066LK1066&sa=X&ved=2ahUKEwif0IeMt5yAAxXommMGHZlPCZYQ4lYoB3oECAEQPA&biw=1519&bih=664#imgrc=uweGtOjprIZ43M -->
+						<img src="./resources/img/gallery/pathaan.png" alt="">
+					</figure>
+			</div> 
+			</div>
+			<section>
+				<div class="title-wrapper">
+					<h2 class="section-title">Most Popular Movies</h2>
+				</div>
+				<div class="container">
+					<div class="products-container">
+						<div class="product" data-name="p-1">
+						<img src="./resources/img/gallery/1.jpg" alt="">
+						</div>
+						<div class="product" data-name="p-2">
+						<img src="./resources/img/gallery/2.jpg" alt="">
+					</div>
+					<div class="product" data-name="p-3">
+						<img src="./resources/img/gallery/3.jpg" alt="">
+					</div>
+					<div class="product" data-name="p-4">
+						<img src="./resources/img/gallery/4.jpg" alt="">
+					</div>
+					<div class="product" data-name="p-5">
+						<img src="./resources/img/gallery/5.jpg" alt="">
+					</div>
+					</div>
+			
+				<div class="products-preview">
+
+					<div class="preview" data-target="p-1">
+
+						<i class="fas fa-times"></i>
+					<video src="./resources/vid/gallery/vid1.mp4" controls style="width:500px; height:450px;" >
+					</video>
+					<div class="stars">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>						  <i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>
+						<span>( 8.8 )
+						</span>
+					</div>
+					<p>The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.
+						<br>
+						
+						Director : -Christopher Nolan <br>
+							Writers : -Christopher Nolan , Kai Bird ,Martin Sherwin	<br>
+							Stars :- Cillian Murphy,Emily Blunt ,Matt Damon
+						</p>
+						</div>
+					
+						<div class="preview" data-target="p-2">
+						<i class="fas fa-times"></i>
+						<video src="./resources/vid/gallery/vid2.mp4" controls style="width:500px; height:450px;" >
+						</video>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<span>( 8.0 )
+							</span>
+						</div>
+						<p>Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands.<br>
+
+							Director :- Christopher McQuarrie<br>
+							Writers :- Bruce Geller ,Erik Jendresen ,Christopher McQuarrie<br>
+							Stars :- Tom Cruise ,Hayley Atwell ,Ving Rhames.
+						</p>
+						</div>
+					
+						<div class="preview" data-target="p-3">
+						<i class="fas fa-times"></i>
+						<video src="./resources/vid/gallery/vid3.mp4" controls style="width:500px; height:450px;" ></video>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>( 8.9 )</span>
+						</div>
+						<p>Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.<br>
+
+							Directors :- Joaquim Dos Santos ,Kemp Powers ,Justin K. Thompson<br>
+							Writers :- Phil Lord, Christopher Miller ,Dave Callaham<br>
+							Stars :- Shameik Moore , Hailee Steinfeld ,Brian Tyree Henry.
+						</p>
+						</div>
+					
+						<div class="preview" data-target="p-4">
+						<i class="fas fa-times"></i>
+						<video src="./resources/vid/gallery/vid4.mp4" controls style="width:500px; height:450px;" >
+						</video>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<span>( 8.0 )</span>
+						</div>
+						<p>The incredible true story of a former government agent turned vigilante who embarks on a dangerous mission to rescue hundreds of children from sex traffickers.<br>
+
+							Director :- Alejandro Monteverde<br>
+							Writers :- Rod Barr , Alejandro Monteverde<br>
+							Stars :- Jim Caviezel, Mira Sorvino, Bill Camp
+						</p>
+						</div>
+					
+						<div class="preview" data-target="p-5">
+						<i class="fas fa-times"></i>
+						<video src="./resources/vid/gallery/vid5.mp4" controls style="width:500px; height:450px;" >
+						</video>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<span>( 7.6 )</span>
+						</div>
+						<p>Barbie suffers a crisis that leads her to question her world and her existence.<br>
+							Director :- Greta Gerwig<br>
+							Writers :- Greta Gerwig, Noah Baumbach<br>
+							Stars :- Margot Robbie, Ryan Gosling, Issa Rae.
+						</p>
+						</div>
+				</div>
+				</div>
+					</section>
+			
+					<section class="top">  
+						<div class="title-wrapper">
+							<h2 class="section-title">NEW RELEASES MOVIES</h2>
+						</div>
+						<div class="container"> 
+							<div class="products-container">
+							<div class="product" data-name="p-6">
+								<img src="./resources/img/gallery/6.jpg" alt="">
+							</div>
+							<div class="product" data-name="p-7">
+								<img src="./resources/img/gallery/7.jpg" alt="">
+							</div>
+							<div class="product" data-name="p-8">
+								<img src="./resources/img/gallery/8.jpg" alt="">
+							</div>
+							<div class="product" data-name="p-9">
+								<img src="./resources/img/gallery/9.jpg" alt="">
+							</div>
+							<div class="product" data-name="p-10">
+								<img src="./resources/img/gallery/10.jpg" alt="">
+							</div>
+							</div>   
+						</div>
+					</section>
+
+					<div id="footer">
+						<div class="footer__container">
+							<div class="animate" id="dev">
+								<a href="./subpages/chathura-info.html "><img src="./resources/img/devs/chathura.png" alt="D.M.C.P.Madhusankha."><span>D.M.C.P.Madhusankha. (Contributor)</span></a>
+							</div>
+							<div class="footer__container__left">
+								<h3>Movie Time</h3>
+								<p>Movie Time is a collaborative website built by a group of students from Informatics Institute of Technology.</p>
+							</div>
+							<div class="footer__container__right">
+								<h3>Quick Links</h3>
+								<ul>
+									<li><a href="home.html">Home</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="shop.html">Shop</a></li>
+									<li><a href="quiz.html">Quiz</a></li>
+									<li><a href="sitemap.html">Sitemap</a></li>
+									<li><a href="comments.html">Comments</a></li>
+									<li><a href="about.html">About Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
 		</div>
-		<script src="js/script.js"></script>
+		<script src="./js/gallery.js"></script>			
+		<script src="./js/script.js"></script>
+		<script>
+			let text = document.getElementsByClassName("product-preview")[0];
+			function bgcolor(value) {
+			  document.body.style.backgroundColor = value;
+			}
+			function fontsize(value) {
+				document.body.className = value;
+			}
+		</script>
 	</body>
 </html>
