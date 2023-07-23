@@ -23,7 +23,7 @@ body{
     width: 200px;
 }
 
-#logo{
+#logo_splash{
     filter: blur(100px);
     position: absolute;
     z-index: -1;
@@ -51,7 +51,7 @@ h1{
     top: 5%;
 }
 
-#logo.logo-animation{
+#logo_splash.logo-animation{
     filter: blur(0px);
     transition: all 3s ease-in-out;
 }
