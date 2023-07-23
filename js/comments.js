@@ -16,6 +16,7 @@ form__bg.addEventListener("mouseout", function () {
 form.addEventListener("submit", function () {
     document.getElementById("form").style.display = "none";
     //display a alert saying thank you
+    alert("Thank you for your feedback!");
     document.querySelector("h1").innerHTML = "Thank you for your feedback!";
 }
 );
