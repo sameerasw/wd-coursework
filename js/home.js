@@ -35,7 +35,7 @@ mouseover(article_card, cursor);
 mouseover(links_card, cursor);
 mouseover(sitemap, cursor);
 visit(article1, "./subpages/article-what-is-imax.html");
-visit(article2, "./subpages/article-top-movies.html");
+visit(article2, "./subpages/article-special-effects-in-movies.html");
 visit(article3, "./subpages/article-why-watch-movies.html");
 visit(article4, "./subpages/article-review-web.html");
 visit(game__banner, "./quiz.html");
