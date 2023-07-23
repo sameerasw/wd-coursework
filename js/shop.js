@@ -1,4 +1,6 @@
 // shopping cart
+
+// https://www.digitalocean.com/community/tutorials/understanding-map-and-set-objects-in-javascript
 const products = [
     {
         id : 0,
@@ -71,8 +73,8 @@ const products = [
 const category = [...new Set(products.map((item) =>
     {return item}))]
     
-    let i = 0;
-document.getElementById("root").innerHTML = category.map((item) =>
+    let index = 0;
+document.getElementById("main").innerHTML = category.map((item) =>
 {
     var {image,title,price} = item;
     return(
@@ -81,7 +83,7 @@ document.getElementById("root").innerHTML = category.map((item) =>
             <h3>${title}</h3>
             <h4>LKR: ${price}</h4>
             <div class="cart">` +
-                    "<i class='bx bx-cart' title='Buy Now' onclick='addtocart("+(i++)+")'> </i>" +
+                    "<i class='bx bx-cart' title='Buy Now' onclick='addtocart("+(index++)+")'> </i>" +
             `</div>
         </div>` 
     );

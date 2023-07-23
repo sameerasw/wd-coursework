@@ -40,7 +40,7 @@
     align-items: start;
   }
   
-  section .container #root {
+  section .container #main {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 2fr);
@@ -100,7 +100,7 @@
     margin-left: 20px;
   }
   
-  section .container #root .box{
+  section .container #main .box{
     padding: 0px 20px 20px 20px;
     background: transparent;
     box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);    
@@ -111,32 +111,32 @@
     max-height: 90%;
   }
   
-  section .container #root .box img{
+  section .container #main .box img{
     width: 100%;
     height: auto;
     outline: 1px solid var(--theme-primary);
     /* max-height: 100%; */
   }
 
-  section .container #root .box img:hover{
+  section .container #main .box img:hover{
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
   }
   
-  section .container #root .box h3{
+  section .container #main .box h3{
     /* font-size: 15px; */
     letter-spacing: 1px;
     margin-bottom: 6px;
     
   }
   
-  section .container #root .box h4 {
+  section .container #main .box h4 {
     /* font-size: 14px; */
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
   
-  section .container #root .box .cart{
+  section .container #main .box .cart{
     position: absolute;
     top: 0;
     left: 0;
@@ -151,7 +151,7 @@
     border: 1px solid var(--theme-black);
   }
   
-  section .container #root .box:hover {
+  section .container #main .box:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
   }
