@@ -153,7 +153,7 @@ function checkout(){
     }
     else {
         // go to checkout page;
-        window.open("../subpages/check_out.html", "_blank");
+        window.open("./subpages/check_out.html", "_blank");
         //clear cart
         cart = [];
         localStorage.setItem("cart", JSON.stringify(cart));
