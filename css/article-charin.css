@@ -167,9 +167,9 @@ dl {
     overflow: hidden;
 }
 
-/* .wrapper .card:hover {
+.wrapper .card:hover {
     scale: 1.05;
-} */
+}
 
 .wrapper .card .content {
     position: relative;
