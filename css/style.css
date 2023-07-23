@@ -2,8 +2,7 @@
     --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
     --theme-white: #fff; /* best for text */
     --theme-black: #000;
-    --theme-radius: 0.5rem;
-    --theme-bg-trans: #00000055;
+    --theme-bg-trans: #00000055; /* with transparency */
     --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
 }
 
