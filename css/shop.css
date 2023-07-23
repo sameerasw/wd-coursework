@@ -142,7 +142,7 @@
     justify-content: space-between;
     padding: 10px;
     background: var(--theme-tertiary);
-    border-bottom: 1x solid #aaa;
+    border-bottom: 1px solid #aaa;
     border-radius: 3px;
     margin: 10px 10px;
   }
