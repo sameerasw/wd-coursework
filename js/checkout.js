@@ -17,5 +17,6 @@ form.addEventListener("submit", function(e){
 //redirect to home page on close
 close.addEventListener("click", function(){
     popup.classList.remove("open-popup-field");
+    window.location.href = "../home.html";
 }
 );
