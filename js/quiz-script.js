@@ -1,3 +1,10 @@
+/**
+    The logic for quiz app is adopted from following two references
+    Reference 1: https://foolishdeveloper.com/javascript-quiz-app
+    Reference 2: https://codingwithnick.in/create-a-quiz-app-using-html-css-javascript
+ */
+
+// Get all the elements from the HTML file
 let startButton = document.querySelector(".start-btn");
 let popupGuide = document.querySelector(".guide");
 let exitButton = document.querySelector(".exit-btn");
@@ -12,26 +19,32 @@ let quitButton = document.querySelector(".quit-btn");
 let timer;
 let timeLeft = 60;
 
+// Update the timer every second
 function updateTimer() {
+    // Decrease the time left by 1 second
     timeLeft--;
     document.querySelector(".timer-sec").innerText = timeLeft; // Update the timer display
-
+    // If the time is up, clear the timer and display the result page
     if (timeLeft <= 0) {
         clearTimeout(timer);
         showResult();
     } else {
+        // Call the updateTimer function every second
         timer = setTimeout(updateTimer, 1000);
     }
 }
 
+// Start the quiz and display the popup guide
 startButton.onclick = () => {
     popupGuide.classList.add("active");
 };
 
+// Exit the popup guide without starting the quiz
 exitButton.onclick = () => {
     popupGuide.classList.remove("active");
 };
 
+// Continue to the quiz
 continueButton.onclick = () => {
     quizSection.classList.add("active");
     popupGuide.classList.remove("active");
@@ -42,12 +55,14 @@ continueButton.onclick = () => {
     updateTimer();
 };
 
+// Restart the quiz
 restartButton.onclick = () => {
     resultPage.classList.remove("active");
     quizBox.classList.add("active");
     nextButton.classList.remove("active");
     nextButton.textContent = "Next Question";
 
+    // Reset the question count, score and timer
     questionCount = 0;
     score = 0;
     getQuestions(questionCount);
@@ -56,6 +71,7 @@ restartButton.onclick = () => {
     updateTimer();
 };
 
+// Quit the quiz
 quitButton.onclick = () => {
     resultPage.classList.remove("active");
     quizBox.classList.remove("active");
@@ -63,69 +79,80 @@ quitButton.onclick = () => {
     quizSection.classList.remove("active");
     nextButton.textContent = "Next Question";
 
+    // Reset the question count, score and timer
     questionCount = 0;
     score = 0;
     getQuestions(questionCount);
     clearTimeout(timer);
 };
 
+// Initialize the variables for question count and score
 let questionCount = 0;
 let score = 0;
 
+// Display the next question
 nextButton.onclick = () => {
+    // Display the next question if there are more questions otherwise display the result page
     if (questionCount < questions.length - 1) {
         questionCount++;
         getQuestions(questionCount);
     } else {
         showResult();
     }
+    // Display Show Results button on the last question
     if (questionCount == questions.length - 1) {
         nextButton.textContent = "Show Results";
     }
 }
 
-// Get questions from the array in questions.js
+// Get questions from the array in objects
 function getQuestions(index) {
     let question = document.querySelector(".question");
     let questionNumber = document.querySelector(".question-no");
+    // Display the question number and question
     questionNumber.textContent = `${questions[index].number}`;
     question.textContent = `${questions[index].question}`;
 
+    // Display the options for the question
     let options = `<div class="option"><span>${questions[index].options[0]}</span></div>
                    <div class="option"><span>${questions[index].options[1]}</span></div>
                    <div class="option"><span>${questions[index].options[2]}</span></div>
                    <div class="option"><span>${questions[index].options[3]}</span></div>`;
     optionList.innerHTML = options;
 
+    // Add onclick attribute to all the options and get the selected option
     let option = document.querySelectorAll(".option");
     for (let i = 0; i < option.length; i++) {
         option[i].setAttribute("onclick", "selectedOption(this)");
     }
 }
 
+// Check if the selected option is correct or incorrect
 function selectedOption(answer) {
     let Answer = answer.textContent;
     let correctAnswer = questions[questionCount].correctAnswer;
     let allOptions = optionList.children.length;
 
+    // Check if the selected option is correct or incorrect
     if (Answer == correctAnswer) {
         answer.classList.add("correct");
         score++;
     } else {
         answer.classList.add("incorrect");
     }
-
+    // Display the correct answer if the selected option is incorrect
     for (let i = 0; i < allOptions; i++) {
         if (optionList.children[i].textContent == correctAnswer) {
             optionList.children[i].setAttribute("class", "option correct");
         }
     }
-
+    // Disable all the options after selecting one
     for (let i = 0; i < allOptions; i++) {
         optionList.children[i].classList.add("disabled");
     }
 }
 
+// Display the result page
 function showResult() {
     quizBox.classList.remove("active");
     resultPage.classList.add("active");
@@ -139,12 +166,14 @@ function showResult() {
     let wrongAnswers = questions.length - score;
     let timeTaken = 60 - timeLeft;
 
+    // Display the result details
     questionCount.textContent = `Questions: ${questions.length}`;
     wrongText.textContent = `Wrong Answers: ${wrongAnswers}`;
     scoreText.textContent = `Score: ${score}`;
     gradeText.textContent = `Grade: ${score * 10}%`;
     timeText.textContent = `You took ${timeTaken} s`;
 
+    // Display the progress text and relevant based on the score
     if (score == 10) {
         progressText.textContent = "Excellent! You aced the quiz!";
         progressText.style.color = "green"; 
@@ -160,7 +189,7 @@ function showResult() {
     }    
 }
 
-
+// Array of objects containing the questions, correct answers and options
 const questions = [
     {
         number: 1,
