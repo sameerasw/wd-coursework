@@ -8,6 +8,7 @@
     text-decoration: underline;
     font-style: italic;
     display: inline-block;
+    color: var(--theme-primary);
 }
 
 .container img{
@@ -17,6 +18,7 @@
 .container h2{
     align-self: self-start;
     font-style: italic;
+    color: var(--theme-secondary);
 }
 
 .container h2 span{
@@ -59,10 +61,22 @@
     margin-left: 10rem;
 }
 
-dd {
+.container dl dd {
     margin-bottom: 6rem;
 }
 
-dl img {
+.container dl dd img {
     margin-top: 3rem;
 }
+
+.container dl dd a{
+  font-size: 15px;
+  margin-left: 17rem;
+  text-decoration: none;
+  color: var(--theme-primary);
+}
+
+.container dl dd a:active{
+    color: white;
+}
+
