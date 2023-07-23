@@ -22,10 +22,18 @@
 
 .article img {
     width: 100%;
-    overflow: hidden;
 }
 
 .intro {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--theme-white);
+}
+
+.intro p {
     width: 90%;
     margin: 20px auto;
     font-size: 18px;
@@ -43,6 +51,11 @@
     position: relative;
     top: -9px;
     color: var(--theme-primary);
+}
+
+.intro img {
+    position: relative;
+    top: 20px;
 }
 
 div.subtopics {
@@ -154,9 +167,9 @@ dl {
     overflow: hidden;
 }
 
-.wrapper .card:hover {
+/* .wrapper .card:hover {
     scale: 1.05;
-}
+} */
 
 .wrapper .card .content {
     position: relative;
@@ -207,7 +220,7 @@ video {
 }
 
 .source {
-    text-align: left;
-    font-size: 15px;
+    text-align: center;
+    font-size: 18px;
     color: var(--theme-white);
 }
