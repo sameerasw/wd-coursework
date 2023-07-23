@@ -127,6 +127,7 @@ dl {
     margin: 10px 40px;
     color: var(--theme-white);
     font-size: 16px;
+    text-align: justify;
 }
 
 .wrapper {
@@ -169,6 +170,30 @@ dl {
 #types h3 {
     text-align: center;
     font-size: 25px;
+}
+
+video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+}
+
+.video-src a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(148, 0, 206, 0.733);
+}
+
+.video-src a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--theme-white);
 }
 
 #role h3 {

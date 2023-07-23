@@ -17,7 +17,7 @@
 	<body>
 		<nav>
 			<ul id="navbar">
-				<a href="../index.html"><li style="float: left"><img src="../resources/logo.svg" alt=""></li></a>
+                <li id="logo" style="float:left"><a href="index.html"><img src="../resources/logo.svg" alt="logo"></a></li>
 				<li><a href="../home.html"><span class="material-symbols-rounded">home</span><span class="nav__text">Home</span></a></li>
 				<li><a href="../gallery.html"><span class="material-symbols-rounded">movie</span><span class="nav__text">Gallery</span></a></li>
 				<li><a href="../shop.html"><span class="material-symbols-rounded">shop</span><span class="nav__text">Shop</span></a></li>
@@ -32,13 +32,15 @@
 						<option value="butter">Butter</option>
 					</select>
 				</li>
-				<div class="dot" style="
-				transform: translateX(-50px);
-				-webkit-transform: translateX(-50px);
-				-webkit-transition: all 0.2s ease-in-out;
-				transition: all 0.2s ease-in-out;
-				"></div> <!-- Change the translateX values according to the page you are adapting the navbar. -->
-			  </ul>
+                <li>
+					<div class="dot" style="
+				 transform: translateX(775px);
+				 -webkit-transform: translateX(775px);
+				 -webkit-transition: all 0.2s ease-in-out;
+				 transition: all 0.2s ease-in-out;
+				 "></div> <!-- Change the translateX values according to the page you are adapting the navbar. --> 
+				 </li>
+			   </ul>
 			</nav>
 			<section class="article">
 				<h1 class="title">Special Effects in Movies</h1>
@@ -200,6 +202,10 @@
 							</p>	
 						</dd>
 					</dl>
+					<video width="600" controls>
+						<source src="../resources/img/article-charin/The Special Effects.mp4" type="video/mp4">
+					  </video>
+					  <p class="video-src"><a href="https://www.youtube.com/watch?v=ZiFZVDFSyGE&t=1s"><span>Source:&nbsp;</span>SFX Supervisor Chris Corbould on Bond & Batman</a></p>
 				</div>
 				<div id="role">
 					<h3>The role of Special Effects in Movies</h3>
