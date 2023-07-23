@@ -102,46 +102,48 @@ body{
   }
 
   .dot {
+    position: absolute !important;
+    top: 5px;
     width: 40px;
     height: 4px;
-    background: var(--theme-primary);
+    background: var(--theme-primary) !important;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
   }
   
-  #navbar li:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(125px) !important;
-    transform: translateX(125px) !important;
+  #navbar li:nth-child(2):hover ~ li .dot {
+    -webkit-transform: translateX(-865px) !important;
+    transform: translateX(-865px) !important;
   }
   
-  #navbar li:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(255px) !important;
-    transform: translateX(255px) !important;
+  #navbar li:nth-child(3):hover ~ li .dot {
+    -webkit-transform: translateX(-735px) !important;
+    transform: translateX(-735px) !important;
   }
   
-  #navbar li:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(385px) !important;
-    transform: translateX(385px) !important;
+  #navbar li:nth-child(4):hover ~ li .dot {
+    -webkit-transform: translateX(-605px) !important;
+    transform: translateX(-605px) !important;
   }
   
-  #navbar li:nth-child(5):hover ~ .dot {
-    -webkit-transform: translateX(515px) !important;
-    transform: translateX(515px) !important;
+  #navbar li:nth-child(5):hover ~ li .dot {
+    -webkit-transform: translateX(-475px) !important;
+    transform: translateX(-475px) !important;
   }
   
-  #navbar li:nth-child(6):hover ~ .dot {
-    -webkit-transform: translateX(645px) !important;
-    transform: translateX(645px) !important;
+  #navbar li:nth-child(6):hover ~ li .dot {
+    -webkit-transform: translateX(-345px) !important;
+    transform: translateX(-345px) !important;
   }
     
-  #navbar li:nth-child(7):hover ~ .dot {
-    -webkit-transform: translateX(775px) !important;
-    transform: translateX(775px) !important;
+  #navbar li:nth-child(7):hover ~ li .dot {
+    -webkit-transform: translateX(-215px) !important;
+    transform: translateX(-215px) !important;
   }
 
-  #navbar li:nth-child(8):hover ~ .dot {
-    -webkit-transform: translateX(905px) !important;
-    transform: translateX(905px) !important;
+  #navbar li:nth-child(8):hover ~ li .dot {
+    -webkit-transform: translateX(-85px) !important;
+    transform: translateX(-85px) !important;
   }
 
   .nav__text{

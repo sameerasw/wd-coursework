@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Shop</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/theme-crimson.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="css/theme-butter.css" id="theme"> -->
 		<!-- <link rel="stylesheet" href="css/no-cursor.css"> -->
 		<link rel="stylesheet" href="css/background.css">
 
@@ -15,8 +17,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-		<link rel="icon" type="image/svg" href="resources/favicon.svg"/>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<link rel="icon" type="image/svg" href="resources/favicon.svg">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
 	</head>
 	<body>
 		<nav>
@@ -43,23 +45,28 @@
       
 			<li>
 				<div class="dot" style="
-			 transform: translateX(775px);
-			 -webkit-transform: translateX(775px);
+			 transform: translateX(-605px);
+			 -webkit-transform: translateX(-605px);
 			 -webkit-transition: all 0.2s ease-in-out;
 			 transition: all 0.2s ease-in-out;
 			 "></div> <!-- Change the translateX values according to the page you are adapting the navbar. --> 
 			 </li>
 	   </ul>
 		</nav>
-		<a id="cart"><i class="bx bxs-shopping-bag"></i><p id="count">0</p></a>
+		<!-- <span id="count">0</span> -->
 
-		<div class="container">
+		<h1>Store</h1>
+		
+		
+
+		<!-- <div class="container"> -->
 			<div class="cursor rounded move" id="cursor"></div>
+			
 			<section class="shop" id="shop">
 				<div class="container">
 				  <div id="root"></div>
 				  <div class="sidebar">
-					  <div class="head"><p>My Cart</p></div>
+					  <div class="head"><p>My Cart</p> <i class="bx bxs-shopping-bag"></i><span id="count">0</span></div>
 					  <div id="cartItem">Your Cart is empty</div>
 					  <div class="foot">
 						  <h3>Total</h3>
@@ -68,9 +75,37 @@
 					  <input type="submit" value="Proceed to Checkout" onclick="checkout()" class="chkout-btn">
 				  </div>
 			  </div>
+			</section>
+			<div class="popup" id="popup">
+				<img src="./resources/img/shop/empty-cart.png">
+				<h2>Cart is Empty</h2>
+				<p>You have to buy atleast one item to proceed.</p>
+				<button type="button" id="close">Close</button>
+			</div>
+			<div id="footer">
+				<div class="footer__container">
+					<div class="animate" id="dev">
+						<a href="./subpages/sameerasw-info.html"><img src="./resources/img/devs/sameera.png" alt="Sameera Sandakelum"><span>Udith Kavishka (Contributor)</span></a>
+					</div>
+					<div class="footer__container__left">
+						<h3>Movie Time</h3>
+						<p>Movie Time is a collaborative website built by a group of students from Informatics Institute of Technology.</p>
+					</div>
+					<div class="footer__container__right">
+						<h3>Quick Links</h3>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="quiz.html">Quiz</a></li>
+							<li><a href="sitemap.html">Sitemap</a></li>
+							<li><a href="comments.html">Comments</a></li>
+							<li><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
 				</div>
-			  </section>	
-		</div>
+			</div>
+			
 		<script src="js/shop.js"></script>
 		<script src="js/script.js"></script>
 		<!-- <script src="js/cursor.js"></script> -->
