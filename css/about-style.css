@@ -1,12 +1,4 @@
-:root{
-    --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
-    --theme-white: #fff; /* best for text */
-    --theme-black: #000;
-    --theme-radius: 0.5rem;
-    --theme-bg-trans: #00000055;
-    --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
-}
-
+/* -------- Styling for About Page -------- */
 .about {
     width: 100%;
     margin: 0;
@@ -29,6 +21,7 @@
     margin-bottom: 1rem;
 }
 
+/* -------- Styling for Cards used to display Student Details -------- */
 .wrapper {
     width: 100%;
     position: relative;
@@ -65,6 +58,7 @@
     transform: translateY(25px);
 }
 
+/* -------- Styling for Hover Effect on images -------- */
 .wrapper .card:hover .content {
     position: relative;
     display: flex;
