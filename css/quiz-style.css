@@ -48,7 +48,7 @@
     background: transparent;
     color: var(--theme-primary);
     border: 4px solid var(--theme-primary);
-    border-radius: var(--theme-radius);
+    border-radius: 10px;
     cursor: pointer;
     text-shadow: 0 40px 40px var(--theme-primary), 0 0 40px var(--theme-primary);
     box-shadow: inset 0 0 12px 0 var(--theme-primary), 0 0 12px 0 var(--theme-primary);
@@ -68,7 +68,7 @@
     transform: translate(-50%, -50%);
     width: 480px;
     background-color: var(--theme-tertiary);
-    border-radius: var(--theme-radius);
+    border-radius: 10px;
     padding: 10px 20px;
     opacity: 0;
     pointer-events: none;
@@ -106,7 +106,7 @@
     height: 32px;
     font-size: 15px;
     margin-right: 15px;
-    border-radius: var(--theme-radius);
+    border-radius: 10px;
     background: transparent;
     color: var(--theme-primary);
     border: 2px solid var(--theme-primary);
@@ -123,7 +123,7 @@
     width: 100px;
     height: 30px;
     border: 1px solid var(--theme-primary);
-    border-radius: var(--theme-radius);
+    border-radius: 10px;
 }
 
 .exit-btn:hover {
@@ -216,7 +216,7 @@
     color: var(--theme-bg);
     background-color: var(--theme-primary);
     padding: 2px 4px;
-    border-radius: var(--theme-radius);
+    border-radius: 10px;
 }
 
 .quiz-box .question {
@@ -353,7 +353,7 @@ div.result-page span {
     width: 100px;
     height: 30px;
     border: 1px solid var(--theme-primary);
-    border-radius: var(--theme-radius);
+    border-radius: 10px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -378,7 +378,7 @@ div.result-page span {
     width: 100px;
     height: 30px;
     border: 1px solid var(--theme-primary);
-    border-radius: var(--theme-radius);
+    border-radius: 10px;
     margin-right: 10px;
     cursor: pointer;
 }
