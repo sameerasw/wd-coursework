@@ -1,18 +1,9 @@
 # WD-Coursework
-Web Design and development cousework repo
+Web Design and development cousework repo - completed
 
-```diff
-- PLEASE ONLY PUSH TO YOUR OWN BRANCH!
-! AND SEND A PULL REQUEST WHEN MERGING.
-```
+![image](https://github.com/sameerasw/wd-coursework/assets/68902530/736af62d-3765-43f2-b6c6-59229d107fdd)
 
-### Tasks:- 
-- [x] Formed Group with 4 Members
-- [x] Filled out Doc with member info
-- [x] Specify the member role
-- [ ] Report Progression
 
-### CW Progress:-
 
 | Role | Member        |
 |-----:|---------------|
