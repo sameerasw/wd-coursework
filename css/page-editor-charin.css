@@ -1,3 +1,4 @@
+/* -------- Styling for Page Editor Home Page -------- */
 .about-me {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,15 @@
     line-height: 0.5;
 }
 
+/* -------- Styling for Contributions -------- */
+div.subtopics {
+    width: 80%;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    color: var(--theme-white);
+}
+
 .intro {
     width: 90%;
     margin: 50px 0;
@@ -55,14 +65,6 @@
     position: relative;
     top: -9px;
     color: var(--theme-primary);
-}
-
-div.subtopics {
-    width: 80%;
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.2;
-    color: var(--theme-white);
 }
 
 .subtopics h3 {

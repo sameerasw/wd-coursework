@@ -1,3 +1,4 @@
+/* -------- Styling for Article Page -------- */
 .article {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@
     color: var(--theme-primary);
 }
 
+/* -------- Styling for topic of the page -------- */
 .title {
     text-align: center;
     width: 100%;
@@ -24,6 +26,7 @@
     width: 100%;
 }
 
+/* -------- Styling for Content -------- */
 .intro {
     width: 90%;
     margin: 50px auto;
@@ -143,6 +146,7 @@ dl {
     text-align: justify;
 }
 
+/* -------- Styling for Movie Posters -------- */
 .wrapper {
     width: 100%;
     display: flex;
