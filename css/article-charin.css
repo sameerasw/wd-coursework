@@ -12,12 +12,12 @@
     color: var(--theme-primary);
 }
 
-/* -------- If the screen size is 600px or less, set the width to 80% -------- */
-@media only screen and (max-width: 900px) {
+/* -------- If the screen size is 1150px or less, set the width to 80% -------- */
+@media only screen and (max-width: 1150px) {
     .article {
     width: 80%;
     }
-  }
+}
 
 /* -------- Styling for topic of the page -------- */
 .title {
