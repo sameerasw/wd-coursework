@@ -12,6 +12,13 @@
     color: var(--theme-primary);
 }
 
+/* -------- If the screen size is 1150px or less, set the width to 80% -------- */
+@media only screen and (max-width: 1150px) {
+    .about-me {
+    width: 80%;
+    }
+}
+
 .title {
     text-align: center;
     width: 100%;
