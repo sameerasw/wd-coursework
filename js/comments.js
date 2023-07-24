@@ -1,14 +1,14 @@
 let form__bg = document.getElementsByClassName("form__bg")[0];
 let form = document.getElementById("form");
-let cursor = document.getElementById("cursor");
+let cursor_cont = document.getElementById("cursor");
 
 form__bg.addEventListener("mouseover", function () {
-    cursor.classList.add("cursor-hover");
+    cursor_cont.classList.add("cursor-hover");
 }
 );
 
 form__bg.addEventListener("mouseout", function () {
-    cursor.classList.remove("cursor-hover");
+    cursor_cont.classList.remove("cursor-hover");
 }
 );
 

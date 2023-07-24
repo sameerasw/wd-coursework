@@ -1,3 +1,4 @@
+/* -------- Styling for Article Page -------- */
 .article {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,14 @@
     color: var(--theme-primary);
 }
 
+/* -------- If the screen size is 1150px or less, set the width to 80% -------- */
+@media only screen and (max-width: 1150px) {
+    .article {
+    width: 80%;
+    }
+}
+
+/* -------- Styling for topic of the page -------- */
 .title {
     text-align: center;
     width: 100%;
@@ -22,10 +31,19 @@
 
 .article img {
     width: 100%;
-    overflow: hidden;
 }
 
+/* -------- Styling for Content -------- */
 .intro {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--theme-white);
+}
+
+.intro p {
     width: 90%;
     margin: 20px auto;
     font-size: 18px;
@@ -43,6 +61,11 @@
     position: relative;
     top: -9px;
     color: var(--theme-primary);
+}
+
+.intro img {
+    position: relative;
+    top: 20px;
 }
 
 div.subtopics {
@@ -103,7 +126,7 @@ div.used-for {
 .used-for ul {
     margin: 5px;
     position: relative;
-    left: 50px;
+    left: 40px;
 }
 
 .used-for ul li {
@@ -130,6 +153,7 @@ dl {
     text-align: justify;
 }
 
+/* -------- Styling for Movie Posters -------- */
 .wrapper {
     width: 100%;
     display: flex;
@@ -155,7 +179,7 @@ dl {
 }
 
 .wrapper .card:hover {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 .wrapper .card .content {
@@ -207,7 +231,7 @@ video {
 }
 
 .source {
-    text-align: left;
-    font-size: 15px;
+    text-align: center;
+    font-size: 18px;
     color: var(--theme-white);
 }
