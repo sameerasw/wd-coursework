@@ -1,5 +1,5 @@
 # WD-Coursework
-Web Design and development cousework repo - completed
+Web Design and Development Cousework Repo - completed on 24th July 2023
 
 ![image](https://github.com/sameerasw/wd-coursework/assets/68902530/736af62d-3765-43f2-b6c6-59229d107fdd)
 
