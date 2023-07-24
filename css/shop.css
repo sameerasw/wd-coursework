@@ -1,37 +1,20 @@
-  /* my */
   h1 {
     margin-top: 5rem;
     margin-left: 38rem;
     font-size: 40px;
   }
-
-  /* .bxs-shopping-bag{
-    margin-left: 28rem;
-  } */
   
   .bx-cart:hover{
     transform: translate(4px,4px);
     color: maroon;
     transition: 0.3s ease-in-out;
   }
-  
-  #cart {
-    position: relative;
-    top: 80px;
-    right: 50px;
-  }
  
   section{
     padding: 10px 8%;
   }
-
-  .cart-count{
-    position: relative;
-    top: 50px;
-    right: 50px;
-  }
   
-  /* overreide values in style.css to which suits to mine */
+  /* override values in style.css to which to make them adjust with mine */
   section .container{
     display: flex;
     width: 100%;
@@ -40,7 +23,7 @@
     align-items: start;
   }
   
-  section .container #root {
+  section .container #main {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 2fr);
@@ -100,7 +83,7 @@
     margin-left: 20px;
   }
   
-  section .container #root .box{
+  section .container #main .box{
     padding: 0px 20px 20px 20px;
     background: transparent;
     box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);    
@@ -111,32 +94,29 @@
     max-height: 90%;
   }
   
-  section .container #root .box img{
+  section .container #main .box img{
     width: 100%;
     height: auto;
     outline: 1px solid var(--theme-primary);
-    /* max-height: 100%; */
   }
 
-  section .container #root .box img:hover{
+  section .container #main .box img:hover{
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
   }
   
-  section .container #root .box h3{
-    /* font-size: 15px; */
+  section .container #main .box h3{
     letter-spacing: 1px;
     margin-bottom: 6px;
     
   }
   
-  section .container #root .box h4 {
-    /* font-size: 14px; */
+  section .container #main .box h4 {
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
   
-  section .container #root .box .cart{
+  section .container #main .box .cart{
     position: absolute;
     top: 0;
     left: 0;
@@ -151,7 +131,7 @@
     border: 1px solid var(--theme-black);
   }
   
-  section .container #root .box:hover {
+  section .container #main .box:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
   }
@@ -162,7 +142,7 @@
     justify-content: space-between;
     padding: 10px;
     background: var(--theme-tertiary);
-    border-bottom: 1x solid #aaa;
+    border-bottom: 1px solid #aaa;
     border-radius: 3px;
     margin: 10px 10px;
   }
@@ -197,7 +177,6 @@
     font-size: 16px;
     font-weight: bolder;
     border: 1px solid var(--theme-tertiary);  
-    /* border-radius: 10px; */
     text-transform: uppercase;
   }
 
@@ -207,75 +186,66 @@
     background-color: var(--theme-secondary);
   }
 
-  .animate{
+  /* .animate{
     opacity: 1 !important;
     scale: 1 !important;
-  }
+  } */
 
-  #dev span {
+  /* #dev span {
     margin: 0 !important;
-  }
+  } */
 
-  .popup{
-    width: 400px;
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    /* margin-left: -70px; */
-    margin-right: auto;
-    transform: translate(-50%, -50%) scale(1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    border: 1px solid #000;
-    visibility: hidden;
-    transition: transform 0.3s, top 2s;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+.popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-right: auto;
+  transform: translate(-50%, -50%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  border: 1px solid #000;
+  visibility: hidden;
+  transition: transform 0.3s, top 2s;
 }
 
 .open-popup-field{
-    top: 50%;
-    visibility: visible;
-    /* top: 50%; */
-    transform: translate(-50%, -50%) scale(1);
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .popup img{
-    width: 100px;
-    height: 6rem;
-    margin-top: 3rem;
-    border-radius: 50%;
-    border: 2px solid;
-    /* box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
+  width: 100px;
+  height: 6rem;
+  margin-top: 3rem;
+  border-radius: 50%;
+  border: 2px solid;
 }
 
 .popup h2{
     font-size: 40px;
-    /* font-weight: 500px; */
-    margin: 20px 0 10px;
+  margin: 20px 0 10px;
 }
 .popup p{
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
 }
 .popup button{
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #000;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
 }
   
   

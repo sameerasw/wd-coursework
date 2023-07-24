@@ -6,9 +6,6 @@
 		<title>Shop</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/theme-cyan.css" id="theme">
-		<!-- <link rel="stylesheet" href="css/theme-crimson.css" id="theme"> -->
-		<!-- <link rel="stylesheet" href="css/theme-butter.css" id="theme"> -->
-		<!-- <link rel="stylesheet" href="css/no-cursor.css"> -->
 		<link rel="stylesheet" href="css/background.css">
 
 		<link rel="stylesheet" href="css/shop.css">
@@ -32,9 +29,6 @@
 			<li><a href="comments.html"><span class="material-symbols-rounded">chat</span><span class="nav__text">Comments</span></a></li>
 			<li><a href="about.html"><span class="material-symbols-rounded">info</span><span class="nav__text">About Us</span></a></li>
 			
-			<!-- to do -->
-			<!-- <li><a id="cart"><i class="bx bxs-shopping-bag"></i><p id="count">0</p></a></li> -->
-			
 			<li style="float: right">
 				<select name="Theme" id="theme-selector">
 					<option value="cyan">Cyan</option>
@@ -53,28 +47,26 @@
 			 </li>
 	   </ul>
 		</nav>
-		<!-- <span id="count">0</span> -->
-
 		<h1>Store</h1>
-		
-		
 
-		<!-- <div class="container"> -->
-			<div class="cursor rounded move" id="cursor"></div>
-			
 			<section class="shop" id="shop">
 				<div class="container">
-				  <div id="root"></div>
+				  <div id="main">
+					<!-- To add shop items -->
+				  </div>
 				  <div class="sidebar">
 					  <div class="head"><p>My Cart</p> <i class="bx bxs-shopping-bag"></i><span id="count">0</span></div>
-					  <div id="cartItem">Your Cart is empty</div>
+					  <div id="cartItem">
+						Your Cart is empty
+						<!-- Cart Items will be added here and text will be removed -->
+					  </div>
 					  <div class="foot">
 						  <h3>Total</h3>
 						  <div id="total">LKR: 0.00</div>
 					  </div>
 					  <input type="submit" value="Proceed to Checkout" onclick="checkout()" class="chkout-btn">
 				  </div>
-			  </div>
+			  	</div>
 			</section>
 			<div class="popup" id="popup">
 				<img src="./resources/img/shop/empty-cart.png">
@@ -85,7 +77,7 @@
 			<div id="footer">
 				<div class="footer__container">
 					<div class="animate" id="dev">
-						<a href="./subpages/sameerasw-info.html"><img src="./resources/img/devs/sameera.png" alt="Sameera Sandakelum"><span>Udith Kavishka (Contributor)</span></a>
+						<a href="./subpages/udith_task_info.html"><img src="./resources/img/devs/udith.png" alt="Udith Kavishka"><span>Udith Kavishka (Contributor)</span></a>
 					</div>
 					<div class="footer__container__left">
 						<h3>Movie Time</h3>
@@ -106,8 +98,7 @@
 				</div>
 			</div>
 			
-		<script src="js/shop.js"></script>
-		<script src="js/script.js"></script>
-		<!-- <script src="js/cursor.js"></script> -->
+		<script src="./js/shop.js"></script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

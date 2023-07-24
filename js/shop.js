@@ -1,67 +1,69 @@
 // shopping cart
+
+// https://www.digitalocean.com/community/tutorials/understanding-map-and-set-objects-in-javascript
 const products = [
     {
-        id : 0,
+        // index 0
         image: "resources/img/shop/movie-1.png",
         title: "Sonic: The Hedgehog 2",
         price: 2000,
     },
     {
-        id : 1,
+        // index 1
         image: "resources/img/shop/movie-2.png",
         title: "Morbius",
         price: 1000,
     },
     {
-        id : 2,
+        // index 2
         image: "resources/img/shop/movie-3.png",
         title: "Adam Project",
         price: 900,
     },
     {
-        id : 3,
+        // index 3
         image: "resources/img/shop/movie-4.png",
         title: "Free Guy",
         price: 2500,
     },
     {
-        id : 4,
+        // index 4
         image: "resources/img/shop/movie-5.png",
         title: "Batman",
         price: 2000,
     },
     {
-        id : 5,
+        // index 5
         image: "resources/img/shop/movie-6.png",
         title: "Uncharted",
         price: 2000,
     },
     {
-        id : 6,
+        // index 6
         image: "resources/img/shop/movie-7.png",
         title: "Death on the nile",
         price: 900,
     },
     {
-        id : 7,
+        // index 7
         image: "resources/img/shop/movie-8.png",
         title: "The Kingsman",
         price: 2500,
     },
     {
-        id : 8,
+        // index 8
         image: "resources/img/shop/movie-9.png",
         title: "The Northman",
         price: 3000,
     },
     {
-        id : 9,
+        // index 9
         image: "resources/img/shop/movie-10.png",
         title: "Memory",
         price: 2500,
     },
     {
-        id : 10,
+        // index 10,
         image: "resources/img/shop/movie-11.png",
         title: "Multiverse of Madness",
         price: 1000,
@@ -71,8 +73,8 @@ const products = [
 const category = [...new Set(products.map((item) =>
     {return item}))]
     
-    let i = 0;
-document.getElementById("root").innerHTML = category.map((item) =>
+    let index = 0;
+document.getElementById("main").innerHTML = category.map((item) =>
 {
     var {image,title,price} = item;
     return(
@@ -81,7 +83,7 @@ document.getElementById("root").innerHTML = category.map((item) =>
             <h3>${title}</h3>
             <h4>LKR: ${price}</h4>
             <div class="cart">` +
-                    "<i class='bx bx-cart' title='Buy Now' onclick='addtocart("+(i++)+")'> </i>" +
+                    "<i class='bx bx-cart' title='Buy Now' onclick='addtocart("+(index++)+")'> </i>" +
             `</div>
         </div>` 
     );
@@ -139,11 +141,9 @@ function checkout(){
     let popup = document.getElementById("popup");
     let close = document.getElementById("close");
 
-    //split the string to get the price
     totalPrice;
 
     if(totalPrice == "LKR: 0.00"){
-        // alert("At least buy one")
         popup.classList.add("open-popup-field");
         close.addEventListener("click", function(){
             popup.classList.remove("open-popup-field");
