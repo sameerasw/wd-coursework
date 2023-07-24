@@ -1,6 +1,5 @@
-let logo = document.getElementById("logo");
+let logo = document.getElementById("logo_splash");
 let title = document.getElementById("details");
-
 
 window.addEventListener('DOMContentLoaded', (event) => {
     setTimeout(() => {

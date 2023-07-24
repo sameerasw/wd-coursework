@@ -2,8 +2,7 @@
     --theme-bg: #191919; /* use like -> color: var(--theme-bg); */
     --theme-white: #fff; /* best for text */
     --theme-black: #000;
-    --theme-radius: 0.5rem;
-    --theme-bg-trans: #00000055;
+    --theme-bg-trans: #00000055; /* with transparency */
     --theme-blur:10px; /* use like -> backdrop-filter: blur(var(--theme-blur)); */
 }
 
@@ -25,12 +24,30 @@ body{
     width: 100%;
     background-color: var(--theme-bg-trans);
     backdrop-filter: blur(var(--theme-blur));
-    position: -webkit-sticky; /* Safari */
     position: fixed;
     top: 0;
     z-index: 100000;
   }
-  
+
+#logo{
+  width: 65px;
+  top: 0 !important;
+  left: 0 !important;
+  }
+
+#logo a{
+  padding: 10px 0 !important;
+  width: 50% !important;
+  margin: 0 0 0 15px !important;
+}
+
+#navbar img{
+  width: 35px;
+  border-radius: 50%;
+  background-color: var(--theme-primary);
+  transition: all 0.3s ease-in-out;
+}  
+
   li {
     float: left;
     transition: all 0.3s ease-in-out;
@@ -66,16 +83,6 @@ body{
     background-color: var(--theme-tertiary);
   }
 
-  #navbar img{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin: 5px 20px 0 20px;
-    /* border: var(--theme-primary) 3px solid; */
-    border-radius: 50%;
-    background-color: var(--theme-primary);
-    transition: all 0.3s ease-in-out;
-  }
 
   li select{
     width: 100px;
@@ -93,46 +100,48 @@ body{
   }
 
   .dot {
+    position: absolute !important;
+    top: 5px;
     width: 40px;
     height: 4px;
-    background: var(--theme-primary);
+    background: var(--theme-primary) !important;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
   }
   
-  #navbar li:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(125px) !important;
-    transform: translateX(125px) !important;
+  #navbar li:nth-child(2):hover ~ li .dot {
+    -webkit-transform: translateX(-865px) !important;
+    transform: translateX(-865px) !important;
   }
   
-  #navbar li:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(255px) !important;
-    transform: translateX(255px) !important;
+  #navbar li:nth-child(3):hover ~ li .dot {
+    -webkit-transform: translateX(-735px) !important;
+    transform: translateX(-735px) !important;
   }
   
-  #navbar li:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(385px) !important;
-    transform: translateX(385px) !important;
+  #navbar li:nth-child(4):hover ~ li .dot {
+    -webkit-transform: translateX(-605px) !important;
+    transform: translateX(-605px) !important;
   }
   
-  #navbar li:nth-child(5):hover ~ .dot {
-    -webkit-transform: translateX(515px) !important;
-    transform: translateX(515px) !important;
+  #navbar li:nth-child(5):hover ~ li .dot {
+    -webkit-transform: translateX(-475px) !important;
+    transform: translateX(-475px) !important;
   }
   
-  #navbar li:nth-child(6):hover ~ .dot {
-    -webkit-transform: translateX(645px) !important;
-    transform: translateX(645px) !important;
+  #navbar li:nth-child(6):hover ~ li .dot {
+    -webkit-transform: translateX(-345px) !important;
+    transform: translateX(-345px) !important;
   }
     
-  #navbar li:nth-child(7):hover ~ .dot {
-    -webkit-transform: translateX(775px) !important;
-    transform: translateX(775px) !important;
+  #navbar li:nth-child(7):hover ~ li .dot {
+    -webkit-transform: translateX(-215px) !important;
+    transform: translateX(-215px) !important;
   }
 
-  #navbar li:nth-child(8):hover ~ .dot {
-    -webkit-transform: translateX(905px) !important;
-    transform: translateX(905px) !important;
+  #navbar li:nth-child(8):hover ~ li .dot {
+    -webkit-transform: translateX(-85px) !important;
+    transform: translateX(-85px) !important;
   }
 
   .nav__text{
@@ -258,19 +267,19 @@ body{
   #theme-selector{
     width:20px;
   }
-  #navbar img{
+  #logo{
     display: none;
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 420px) {
   .nav__text, .dot{
     display: none;
   }
   li a {
     margin: 0 auto;
     width: 25px;
-    padding: auto 5px;
+    padding: 14px 5px;
   }
   li{
     margin: 0 auto;
@@ -278,8 +287,6 @@ body{
   }
   #theme-selector{
     width:20px;
-  }
-  #navbar img{
     display: none;
   }
   .material-symbols-rounded{
@@ -295,15 +302,11 @@ body{
   li a {
     margin: 0 auto;
     width: 25px;
-    padding: auto 5px;
+    padding: 14px 5px;
   }
   li{
     margin: 0 auto;
     padding: 0;
-  }
-  #theme-selector{
-    width:20px;
-    display: none;
   }
   #navbar img{
     display: none;
