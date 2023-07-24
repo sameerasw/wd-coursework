@@ -80,3 +80,8 @@
     color: white;
 }
 
+p span, dd span{
+    margin-left: auto;
+    margin-right: auto;
+    color: goldenrod;
+}
